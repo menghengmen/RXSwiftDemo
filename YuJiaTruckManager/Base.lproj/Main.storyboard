@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RootVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="-18"/>
+        </scene>
+        <!--Main TabVC-->
+        <scene sceneID="7eG-6w-dgu">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabVC" id="941-HX-XSP" customClass="MainTabVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sOe-SZ-PXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.95294117647058818" green="0.40392156862745099" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daH-3u-SIH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="-18"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="Ol0-rO-3kX">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="d2O-It-8Rc" customClass="HomeVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kQ4-WH-tRM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJP-gu-JQl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="d2O-It-8Rc" id="3bc-Fd-VFd"/>
+                                    <outlet property="delegate" destination="d2O-It-8Rc" id="TcD-FS-D3T"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1U3-Hx-jqJ" firstAttribute="bottom" secondItem="fJP-gu-JQl" secondAttribute="bottom" id="2px-cq-e7R"/>
+                            <constraint firstItem="fJP-gu-JQl" firstAttribute="trailing" secondItem="1U3-Hx-jqJ" secondAttribute="trailing" id="9By-7J-IoP"/>
+                            <constraint firstItem="fJP-gu-JQl" firstAttribute="top" secondItem="kQ4-WH-tRM" secondAttribute="top" id="RUa-Xr-889"/>
+                            <constraint firstItem="fJP-gu-JQl" firstAttribute="leading" secondItem="1U3-Hx-jqJ" secondAttribute="leading" id="vLl-37-TPy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1U3-Hx-jqJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="首页" image="tab_home_normal" selectedImage="tab_home_selected" id="SRG-Tw-eug"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="fJP-gu-JQl" id="pKv-K8-nQ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YP-A3-Pxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421.5999999999999" y="-18.440779610194905"/>
+        </scene>
+        <!--历史-->
+        <scene sceneID="2Oc-9y-7tF">
+            <objects>
+                <viewController storyboardIdentifier="HistoryVC" id="WYm-iP-jBi" customClass="HistoryVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7fY-cL-Tue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="170-dP-PVm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WYm-iP-jBi" id="pbP-Eh-HP0"/>
+                                    <outlet property="delegate" destination="WYm-iP-jBi" id="CjC-nN-RSe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5mI-BA-9uI" firstAttribute="trailing" secondItem="170-dP-PVm" secondAttribute="trailing" id="2Dc-8m-yiK"/>
+                            <constraint firstItem="5mI-BA-9uI" firstAttribute="bottom" secondItem="170-dP-PVm" secondAttribute="bottom" id="488-DO-oJn"/>
+                            <constraint firstItem="170-dP-PVm" firstAttribute="leading" secondItem="5mI-BA-9uI" secondAttribute="leading" id="60R-6R-zsa"/>
+                            <constraint firstItem="170-dP-PVm" firstAttribute="top" secondItem="7fY-cL-Tue" secondAttribute="top" id="7Oz-jB-G1m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5mI-BA-9uI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="历史" image="tab_history_normal" selectedImage="tab_history_selected" id="xda-yu-wpe"/>
+                    <navigationItem key="navigationItem" id="WlP-6x-Bwt">
+                        <barButtonItem key="rightBarButtonItem" image="icon_filter" id="lyY-Fc-pjO">
+                            <connections>
+                                <action selector="clickFilterBarButton" destination="WYm-iP-jBi" id="Z2Q-gh-uwr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="filterBarBtn" destination="lyY-Fc-pjO" id="Nv9-ci-KjT"/>
+                        <outlet property="tableView" destination="170-dP-PVm" id="iWS-0N-pVY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2X9-ht-XVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250" y="-18"/>
+        </scene>
+        <!--工作台-->
+        <scene sceneID="LQo-Gy-c9O">
+            <objects>
+                <viewController storyboardIdentifier="WorkBenchVC" id="2J8-jd-rfk" customClass="WorkBenchVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJt-SX-bzS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" translatesAutoresizingMaskIntoConstraints="NO" id="CYb-6m-72W">
+                                <rect key="frame" x="10" y="40" width="355" height="35"/>
+                                <segments>
+                                    <segment title="待提交"/>
+                                    <segment title="审核中"/>
+                                    <segment title="驳回"/>
+                                    <segment title="通过"/>
+                                </segments>
+                                <color key="tintColor" red="0.98823529409999999" green="0.37254901959999998" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t3b-2D-5HK">
+                                <rect key="frame" x="0.0" y="84" width="375" height="534"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2J8-jd-rfk" id="gWj-x9-O1h"/>
+                                    <outlet property="delegate" destination="2J8-jd-rfk" id="Nqi-XA-g4q"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="CYb-6m-72W" secondAttribute="trailing" constant="10" id="Bfo-xL-9EW"/>
+                            <constraint firstItem="XuQ-Of-KUB" firstAttribute="trailing" secondItem="t3b-2D-5HK" secondAttribute="trailing" id="Lrp-ak-fRM"/>
+                            <constraint firstItem="t3b-2D-5HK" firstAttribute="top" secondItem="XuQ-Of-KUB" secondAttribute="top" constant="64" id="Q9m-uD-Tbp"/>
+                            <constraint firstItem="CYb-6m-72W" firstAttribute="top" secondItem="XuQ-Of-KUB" secondAttribute="top" constant="20" id="W4B-O3-8lv"/>
+                            <constraint firstItem="CYb-6m-72W" firstAttribute="leading" secondItem="XuQ-Of-KUB" secondAttribute="leading" constant="10" id="WeD-3k-bfj"/>
+                            <constraint firstItem="XuQ-Of-KUB" firstAttribute="bottom" secondItem="t3b-2D-5HK" secondAttribute="bottom" id="jEB-nz-htL"/>
+                            <constraint firstItem="t3b-2D-5HK" firstAttribute="leading" secondItem="XuQ-Of-KUB" secondAttribute="leading" id="mdY-MZ-xjp"/>
+                            <constraint firstItem="t3b-2D-5HK" firstAttribute="top" secondItem="CYb-6m-72W" secondAttribute="bottom" constant="10" id="pxe-Vo-i4G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XuQ-Of-KUB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="工作台" image="tab_workbench" selectedImage="tab_history_normal" id="K5v-OM-CU4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="t3b-2D-5HK" id="oZQ-V5-Nnb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nz3-7q-ifd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202.4000000000001" y="671.51424287856082"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="3jb-SZ-RZ5">
+            <objects>
+                <viewController storyboardIdentifier="UserCenterVC" id="A3Z-30-nGb" customClass="UserCenterVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Px6-Tf-QNy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5t4-wc-e2G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="A3Z-30-nGb" id="2Vt-cA-kXJ"/>
+                                    <outlet property="delegate" destination="A3Z-30-nGb" id="g0h-Fi-nXV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5t4-wc-e2G" firstAttribute="leading" secondItem="JHx-4f-r85" secondAttribute="leading" id="4Pw-yV-gyh"/>
+                            <constraint firstItem="JHx-4f-r85" firstAttribute="trailing" secondItem="5t4-wc-e2G" secondAttribute="trailing" id="SjX-95-SBL"/>
+                            <constraint firstItem="5t4-wc-e2G" firstAttribute="top" secondItem="Px6-Tf-QNy" secondAttribute="top" id="oA1-sD-cVp"/>
+                            <constraint firstItem="JHx-4f-r85" firstAttribute="bottom" secondItem="5t4-wc-e2G" secondAttribute="bottom" id="pS5-XX-B9q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JHx-4f-r85"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="tab_mine_normal" selectedImage="tab_mine_selected" id="VL7-iW-Xpz"/>
+                    <navigationItem key="navigationItem" title="Title" id="tJz-gJ-1Pz">
+                        <barButtonItem key="rightBarButtonItem" image="icon_setting" id="iG0-Yb-ygK"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="settingsBarBtn" destination="iG0-Yb-ygK" id="g5L-Fd-v0y"/>
+                        <outlet property="tableView" destination="5t4-wc-e2G" id="h4W-tV-24w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YI-12-pnr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3044" y="-18"/>
+        </scene>
+        <!--Flash PageVC-->
+        <scene sceneID="yDe-OG-ura">
+            <objects>
+                <viewController storyboardIdentifier="FlashPageVC" id="EkS-mN-345" customClass="FlashPageVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ii1-PA-Oao">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLuanch" translatesAutoresizingMaskIntoConstraints="NO" id="uaY-TQ-k5k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uaY-TQ-k5k" secondAttribute="bottom" id="8fB-M5-dOF"/>
+                            <constraint firstItem="uaY-TQ-k5k" firstAttribute="leading" secondItem="ii1-PA-Oao" secondAttribute="leading" id="HZD-aw-9FD"/>
+                            <constraint firstAttribute="trailing" secondItem="uaY-TQ-k5k" secondAttribute="trailing" id="cJK-oR-4XJ"/>
+                            <constraint firstItem="uaY-TQ-k5k" firstAttribute="top" secondItem="ii1-PA-Oao" secondAttribute="top" id="j1f-3S-1l3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ef5-t0-lCA"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="uaY-TQ-k5k" id="SLM-GO-02M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fnV-hh-XFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLuanch" width="375" height="667"/>
+        <image name="icon_filter" width="20" height="21"/>
+        <image name="icon_setting" width="24" height="24"/>
+        <image name="tab_history_normal" width="28" height="28"/>
+        <image name="tab_history_selected" width="28" height="28"/>
+        <image name="tab_home_normal" width="28" height="28"/>
+        <image name="tab_home_selected" width="28" height="28"/>
+        <image name="tab_mine_normal" width="28" height="28"/>
+        <image name="tab_mine_selected" width="28" height="28"/>
+        <image name="tab_workbench" width="29" height="29"/>
+    </resources>
+</document>

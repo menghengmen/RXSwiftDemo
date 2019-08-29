@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="332" id="KGk-i7-Jjw" customClass="StoreCommonImageCell" customModule="YuJiaTruckManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="332"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="525" height="331.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门店照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1o-7R-Dto">
+                        <rect key="frame" x="20" y="14" width="69.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="b94-BE-UgE"/>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="20" id="lxC-Xr-GfF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-5u-QsP">
+                        <rect key="frame" x="14" y="48" width="237.5" height="144"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="144" id="4qW-e8-Oh0"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="store_placeHolder_icon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPE-3G-ifu">
+                        <rect key="frame" x="273.5" y="48" width="237.5" height="144"/>
+                        <state key="normal" backgroundImage="store_placeHolder_icon"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zxh-5u-QsP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="FQR-uO-kua"/>
+                    <constraint firstItem="qPE-3G-ifu" firstAttribute="width" secondItem="Zxh-5u-QsP" secondAttribute="width" id="Le5-Zi-RyX"/>
+                    <constraint firstItem="Zxh-5u-QsP" firstAttribute="top" secondItem="J1o-7R-Dto" secondAttribute="bottom" constant="14" id="PGg-5s-JjL"/>
+                    <constraint firstItem="qPE-3G-ifu" firstAttribute="leading" secondItem="Zxh-5u-QsP" secondAttribute="trailing" constant="22" id="QoH-4n-VkM"/>
+                    <constraint firstItem="qPE-3G-ifu" firstAttribute="top" secondItem="Zxh-5u-QsP" secondAttribute="top" id="eho-R2-Tzu"/>
+                    <constraint firstItem="J1o-7R-Dto" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="feY-2Z-cvF"/>
+                    <constraint firstAttribute="trailing" secondItem="qPE-3G-ifu" secondAttribute="trailing" constant="14" id="ff0-Ep-BuG"/>
+                    <constraint firstItem="J1o-7R-Dto" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="ifQ-7R-WKZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Zxh-5u-QsP" secondAttribute="bottom" constant="20" id="irR-ZA-Cb8"/>
+                    <constraint firstItem="qPE-3G-ifu" firstAttribute="height" secondItem="Zxh-5u-QsP" secondAttribute="height" id="u7r-j0-FFb"/>
+                    <constraint firstItem="Zxh-5u-QsP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="w8e-zj-lEW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="leftBtn" destination="Zxh-5u-QsP" id="VCq-qo-VYT"/>
+                <outlet property="rightBtn" destination="qPE-3G-ifu" id="Rr7-Zb-7V4"/>
+            </connections>
+            <point key="canvasLocation" x="286.23188405797106" y="194.19642857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="store_placeHolder_icon" width="108.5" height="72"/>
+    </resources>
+</document>

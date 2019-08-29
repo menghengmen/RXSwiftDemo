@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AlarmFilterInputCell" rowHeight="169" id="KGk-i7-Jjw" customClass="AlarmFilterInputCell" customModule="YuJiaTruckManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="168.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="----" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZg-ll-sMX">
+                        <rect key="frame" x="32" y="20" width="29" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBP-WX-BBJ">
+                        <rect key="frame" x="32" y="49.5" width="256" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_searchbar" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-PT-vV2">
+                                <rect key="frame" x="0.0" y="0.0" width="256" height="40"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="----" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="erW-l5-QOF">
+                                <rect key="frame" x="15" y="0.0" width="226" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fHd-WH-bn8"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6lk-PT-vV2" secondAttribute="trailing" id="5pc-KZ-W5X"/>
+                            <constraint firstAttribute="height" constant="40" id="8ja-tL-LR3"/>
+                            <constraint firstItem="6lk-PT-vV2" firstAttribute="top" secondItem="qBP-WX-BBJ" secondAttribute="top" id="KuH-PO-RIY"/>
+                            <constraint firstAttribute="bottom" secondItem="6lk-PT-vV2" secondAttribute="bottom" id="Mx5-d3-9yp"/>
+                            <constraint firstItem="6lk-PT-vV2" firstAttribute="leading" secondItem="qBP-WX-BBJ" secondAttribute="leading" id="Nnw-BW-pDb"/>
+                            <constraint firstAttribute="bottom" secondItem="erW-l5-QOF" secondAttribute="bottom" id="d0Y-H4-6Mv"/>
+                            <constraint firstItem="erW-l5-QOF" firstAttribute="top" secondItem="qBP-WX-BBJ" secondAttribute="top" id="jXg-Ev-dRZ"/>
+                            <constraint firstItem="erW-l5-QOF" firstAttribute="leading" secondItem="qBP-WX-BBJ" secondAttribute="leading" constant="15" id="kcB-9w-xr1"/>
+                            <constraint firstAttribute="trailing" secondItem="erW-l5-QOF" secondAttribute="trailing" constant="15" id="u2e-Kt-I9l"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hZg-ll-sMX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="P33-tT-fHr"/>
+                    <constraint firstItem="qBP-WX-BBJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="ZFd-hw-n10"/>
+                    <constraint firstAttribute="trailing" secondItem="qBP-WX-BBJ" secondAttribute="trailing" constant="32" id="gMF-Um-7tf"/>
+                    <constraint firstItem="qBP-WX-BBJ" firstAttribute="top" secondItem="hZg-ll-sMX" secondAttribute="bottom" constant="10" id="nUn-Wp-LJp"/>
+                    <constraint firstItem="hZg-ll-sMX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="oBe-hq-hve"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="inputTxf" destination="erW-l5-QOF" id="9y5-co-i5f"/>
+                <outlet property="titleLbl" destination="hZg-ll-sMX" id="eJc-Dw-RDO"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="210.04497751124438"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_searchbar" width="17.5" height="18.5"/>
+    </resources>
+</document>

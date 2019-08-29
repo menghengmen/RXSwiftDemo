@@ -1,0 +1,2299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B13C763217F11D600FF5D8D /* ReqCheckUserExists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C762217F11D600FF5D8D /* ReqCheckUserExists.swift */; };
+		1B13C765217F1F8100FF5D8D /* ReqAdminLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C764217F1F8100FF5D8D /* ReqAdminLogin.swift */; };
+		1B13C766217FFE0900FF5D8D /* AdminLoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175816217EF6E200F0C7E9 /* AdminLoginVM.swift */; };
+		1B13C76A218051D300FF5D8D /* ReqLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C769218051D300FF5D8D /* ReqLogin.swift */; };
+		1B13C76C2180543100FF5D8D /* ReqSendCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C76B2180543100FF5D8D /* ReqSendCode.swift */; };
+		1B13C76E21819BFC00FF5D8D /* ReqAddUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C76D21819BFC00FF5D8D /* ReqAddUser.swift */; };
+		1B13C7722182A3B800FF5D8D /* ReqUserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C7712182A3B700FF5D8D /* ReqUserList.swift */; };
+		1B13C7B72182F85A00FF5D8D /* ReqAlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C7B62182F85A00FF5D8D /* ReqAlarmList.swift */; };
+		1B13C84D21842CC000FF5D8D /* ReqDeleteUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C84C21842CBF00FF5D8D /* ReqDeleteUser.swift */; };
+		1B13C84F2184558000FF5D8D /* ReqRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C84E2184558000FF5D8D /* ReqRegister.swift */; };
+		1B13C8512184614D00FF5D8D /* ReqUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C8502184614D00FF5D8D /* ReqUserInfo.swift */; };
+		1B13C8532186DD6E00FF5D8D /* ReqEditUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C8522186DD6E00FF5D8D /* ReqEditUser.swift */; };
+		1B13C8572186FE4500FF5D8D /* ReqGetAlarmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C8562186FE4500FF5D8D /* ReqGetAlarmType.swift */; };
+		1B13C8592187E8B800FF5D8D /* ReqAlarmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13C8582187E8B700FF5D8D /* ReqAlarmDetail.swift */; };
+		1B2E9FFC21D776D800A427F0 /* VehicleGpsSearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E9FFB21D776D800A427F0 /* VehicleGpsSearchVM.swift */; };
+		1B2EA00021D7ABE000A427F0 /* VehicleGpsSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2E9FFF21D7ABE000A427F0 /* VehicleGpsSearchVC.swift */; };
+		1B2EA00221DC8D1B00A427F0 /* VehicleGpsGroupManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA00121DC8D1B00A427F0 /* VehicleGpsGroupManagerVC.swift */; };
+		1B2EA00421DC8D5100A427F0 /* VehicleGpsGroupManagerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA00321DC8D5100A427F0 /* VehicleGpsGroupManagerVM.swift */; };
+		1B2EA00721DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2EA00521DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.swift */; };
+		1B2EA00821DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B2EA00621DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.xib */; };
+		1B40AE6921D6553B00E3A3A1 /* VehicleGpsHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40AE6721D6553B00E3A3A1 /* VehicleGpsHeadCell.swift */; };
+		1B40AE6A21D6553B00E3A3A1 /* VehicleGpsHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B40AE6821D6553B00E3A3A1 /* VehicleGpsHeadCell.xib */; };
+		1B40AE6D21D65B1A00E3A3A1 /* VehicleGpsFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B40AE6B21D65B1A00E3A3A1 /* VehicleGpsFilterCell.swift */; };
+		1B40AE6E21D65B1A00E3A3A1 /* VehicleGpsFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B40AE6C21D65B1A00E3A3A1 /* VehicleGpsFilterCell.xib */; };
+		1B59F4DE21DD0F3B004012D7 /* VehicleGpsGroupEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B59F4DD21DD0F3B004012D7 /* VehicleGpsGroupEditVM.swift */; };
+		1B59F4E021DD0F7E004012D7 /* VehicleGpsGroupEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B59F4DF21DD0F7E004012D7 /* VehicleGpsGroupEditVC.swift */; };
+		1B7E5CD6218BDBC00012AD59 /* ReqGetAlarmCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E5CD5218BDBC00012AD59 /* ReqGetAlarmCount.swift */; };
+		1B7E5CD8218BF6930012AD59 /* ReqAlarmTrend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E5CD7218BF6930012AD59 /* ReqAlarmTrend.swift */; };
+		1B928D3A219022130054953B /* AlarmImageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B928D39219022130054953B /* AlarmImageListVM.swift */; };
+		1B928D3C219022560054953B /* AlarmImageListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B928D3B219022560054953B /* AlarmImageListVC.swift */; };
+		1B928D3F219023450054953B /* AlarmImageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B928D3D219023450054953B /* AlarmImageListCell.xib */; };
+		1B928D40219023450054953B /* AlarmImageListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B928D3E219023450054953B /* AlarmImageListCell.swift */; };
+		1B928D46219139E10054953B /* HistoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B928D45219139E10054953B /* HistoryPickerView.swift */; };
+		1B928D48219280C10054953B /* ReqGetNewVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B928D47219280C00054953B /* ReqGetNewVersion.swift */; };
+		1B9CACA721D321450060B2A7 /* SmartVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACA621D321440060B2A7 /* SmartVoiceView.swift */; };
+		1B9CACA921D322170060B2A7 /* SmartVoice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9CACA821D322170060B2A7 /* SmartVoice.storyboard */; };
+		1B9CACAE21D324C60060B2A7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9CACAD21D324C60060B2A7 /* libz.tbd */; };
+		1B9CACB321D324E70060B2A7 /* FZSpeechRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACB121D324E70060B2A7 /* FZSpeechRecognizer.m */; };
+		1B9CACB521D325C40060B2A7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9CACB421D325C40060B2A7 /* AudioToolbox.framework */; };
+		1B9CACB721D325CE0060B2A7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9CACB621D325CE0060B2A7 /* AVFoundation.framework */; };
+		1B9CACBF21D4614D0060B2A7 /* ReqGetGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACBE21D4614D0060B2A7 /* ReqGetGroups.swift */; };
+		1B9CACC121D4637C0060B2A7 /* ReqAddGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACC021D4637C0060B2A7 /* ReqAddGroup.swift */; };
+		1B9CACC321D464FF0060B2A7 /* ReqDeleteGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACC221D464FF0060B2A7 /* ReqDeleteGroup.swift */; };
+		1B9CACC521D466180060B2A7 /* ReqEditGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACC421D466180060B2A7 /* ReqEditGroup.swift */; };
+		1B9CACC721D4685A0060B2A7 /* ReqQueryAllVehiclesGps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACC621D4685A0060B2A7 /* ReqQueryAllVehiclesGps.swift */; };
+		1B9CACC921D5ACB30060B2A7 /* ReqQueryVehiclesGps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACC821D5ACB30060B2A7 /* ReqQueryVehiclesGps.swift */; };
+		1B9CACCB21D5ADE90060B2A7 /* ReqPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACCA21D5ADE90060B2A7 /* ReqPlayback.swift */; };
+		1B9CACCD21D61CCD0060B2A7 /* VehicleGpsFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACCC21D61CCD0060B2A7 /* VehicleGpsFilterVC.swift */; };
+		1B9CACCF21D61D080060B2A7 /* VehicleGpsFilterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9CACCE21D61D080060B2A7 /* VehicleGpsFilterVM.swift */; };
+		1BD62AB721A6ACFA003B0C40 /* ReqDriverList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AB621A6ACFA003B0C40 /* ReqDriverList.swift */; };
+		1BD62ABC21AB92F7003B0C40 /* ReqAddDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62ABB21AB92F7003B0C40 /* ReqAddDriver.swift */; };
+		1BD62AC421ABC02B003B0C40 /* ReqEditDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AC321ABC02B003B0C40 /* ReqEditDriver.swift */; };
+		1BD62AC621ABCCDC003B0C40 /* ReqDeleteDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AC521ABCCDC003B0C40 /* ReqDeleteDriver.swift */; };
+		1BD62AC821ABEA57003B0C40 /* ReqMenos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AC721ABEA57003B0C40 /* ReqMenos.swift */; };
+		1BD62ACA21ACD0C4003B0C40 /* ReqUpdateMenos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AC921ACD0C4003B0C40 /* ReqUpdateMenos.swift */; };
+		1BD62ACC21ACD481003B0C40 /* ReqDeleteMenos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62ACB21ACD481003B0C40 /* ReqDeleteMenos.swift */; };
+		1BD62ACE21AD0930003B0C40 /* ReqAddMenos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62ACD21AD0930003B0C40 /* ReqAddMenos.swift */; };
+		1BD62AD021AD0B48003B0C40 /* ReqQueryMenos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62ACF21AD0B48003B0C40 /* ReqQueryMenos.swift */; };
+		1BD62AD221AE230A003B0C40 /* ReqUploadMenosImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AD121AE230A003B0C40 /* ReqUploadMenosImage.swift */; };
+		1BD62AD421AE250F003B0C40 /* ReqUploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AD321AE250F003B0C40 /* ReqUploadImage.swift */; };
+		1BD62AD621AF7509003B0C40 /* RemindPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AD521AF7509003B0C40 /* RemindPickerView.swift */; };
+		1BD62AD821B10A28003B0C40 /* ReqGetCanSendCommandVehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AD721B10A27003B0C40 /* ReqGetCanSendCommandVehicles.swift */; };
+		1BD62ADA21B11091003B0C40 /* ReqSearchtCanSendCommandVehicles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD62AD921B11091003B0C40 /* ReqSearchtCanSendCommandVehicles.swift */; };
+		1BFFA71421DDDE0F005DAE8F /* VehicleGpsGroupNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFA71221DDDE0F005DAE8F /* VehicleGpsGroupNameCell.swift */; };
+		1BFFA71521DDDE0F005DAE8F /* VehicleGpsGroupNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BFFA71321DDDE0F005DAE8F /* VehicleGpsGroupNameCell.xib */; };
+		1BFFA71721DE2C34005DAE8F /* VehicleGpsAddVehicleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFA71621DE2C34005DAE8F /* VehicleGpsAddVehicleVC.swift */; };
+		1BFFA71921DE2C89005DAE8F /* VehicleGpsAddVehicleVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFA71821DE2C89005DAE8F /* VehicleGpsAddVehicleVM.swift */; };
+		1BFFA71B21DE5962005DAE8F /* VehicleGpsAddGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFA71A21DE5962005DAE8F /* VehicleGpsAddGroupVC.swift */; };
+		1BFFA71D21DE5991005DAE8F /* VehicleGpsAddGroupVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFA71C21DE5991005DAE8F /* VehicleGpsAddGroupVM.swift */; };
+		1BFFA71F21DEE799005DAE8F /* ReqGetAllVehiclesGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFFA71E21DEE799005DAE8F /* ReqGetAllVehiclesGroup.swift */; };
+		1BFFA72121EC96D1005DAE8F /* iflyMSC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFFA72021EC96D1005DAE8F /* iflyMSC.framework */; };
+		3B1757FA217D649800F0C7E9 /* FlashPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1757F9217D649800F0C7E9 /* FlashPageVC.swift */; };
+		3B1757FC217D64A200F0C7E9 /* FlashPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1757FB217D64A200F0C7E9 /* FlashPageVM.swift */; };
+		3B1757FE217D68F400F0C7E9 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1757FD217D68F400F0C7E9 /* HomeVC.swift */; };
+		3B175800217D68FE00F0C7E9 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1757FF217D68FE00F0C7E9 /* HomeVM.swift */; };
+		3B175803217D9EB400F0C7E9 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B175802217D9EB400F0C7E9 /* Login.storyboard */; };
+		3B175805217D9ED100F0C7E9 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175804217D9ED100F0C7E9 /* LoginVM.swift */; };
+		3B175807217D9ED800F0C7E9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175806217D9ED800F0C7E9 /* LoginVC.swift */; };
+		3B17580B217EC1BD00F0C7E9 /* UserCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B17580A217EC1BD00F0C7E9 /* UserCenter.storyboard */; };
+		3B17580D217EC1C500F0C7E9 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B17580C217EC1C500F0C7E9 /* History.storyboard */; };
+		3B17580F217EC1D400F0C7E9 /* HistoryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17580E217EC1D400F0C7E9 /* HistoryVM.swift */; };
+		3B175811217EC1DB00F0C7E9 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175810217EC1DB00F0C7E9 /* HistoryVC.swift */; };
+		3B175813217EC1EC00F0C7E9 /* UserCenterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175812217EC1EC00F0C7E9 /* UserCenterVM.swift */; };
+		3B175815217EC1F600F0C7E9 /* UserCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175814217EC1F600F0C7E9 /* UserCenterVC.swift */; };
+		3B175819217EF6F900F0C7E9 /* AdminLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175818217EF6F900F0C7E9 /* AdminLoginVC.swift */; };
+		3B17581B217F016800F0C7E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17581A217F016800F0C7E9 /* SystemConfiguration.framework */; };
+		3B17581D217F017100F0C7E9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17581C217F017100F0C7E9 /* Security.framework */; };
+		3B17581F217F017B00F0C7E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17581E217F017B00F0C7E9 /* CoreTelephony.framework */; };
+		3B175821217F01B700F0C7E9 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B175820217F01B700F0C7E9 /* libsqlite3.0.tbd */; };
+		3B175823217F1DAA00F0C7E9 /* VerifyCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175822217F1DAA00F0C7E9 /* VerifyCodeVM.swift */; };
+		3B175825217F1DB800F0C7E9 /* VerifyCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B175824217F1DB800F0C7E9 /* VerifyCodeVC.swift */; };
+		3B17D51B21E2E8D600D9C3C6 /* MyWaybillVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17D51A21E2E8D600D9C3C6 /* MyWaybillVM.swift */; };
+		3B17D51D21E2E8DE00D9C3C6 /* MyWaybillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B17D51C21E2E8DE00D9C3C6 /* MyWaybillVC.swift */; };
+		3B18F1C221AD452300650BC1 /* MonitorCarListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18F1C021AD452300650BC1 /* MonitorCarListCell.swift */; };
+		3B18F1C321AD452300650BC1 /* MonitorCarListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B18F1C121AD452300650BC1 /* MonitorCarListCell.xib */; };
+		3B18F1C521AE2A7200650BC1 /* ReqGetOnlineCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18F1C421AE2A7200650BC1 /* ReqGetOnlineCount.swift */; };
+		3B18F1C721AE2CCD00650BC1 /* ReqGetAlarmTypesCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B18F1C621AE2CCD00650BC1 /* ReqGetAlarmTypesCount.swift */; };
+		3B1D3E902179ABF900347704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3E8F2179ABF900347704 /* AppDelegate.swift */; };
+		3B1D3E952179ABF900347704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D3E932179ABF900347704 /* Main.storyboard */; };
+		3B1D3E972179ABFB00347704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D3E962179ABFB00347704 /* Assets.xcassets */; };
+		3B1D3E9A2179ABFB00347704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D3E982179ABFB00347704 /* LaunchScreen.storyboard */; };
+		3B1D3EA52179ABFB00347704 /* YuJiaTruckManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EA42179ABFB00347704 /* YuJiaTruckManagerTests.swift */; };
+		3B1D3EC02179C71000347704 /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3EBF2179C71000347704 /* BaiduMapAPI_Base.framework */; };
+		3B1D3EC22179C71400347704 /* BaiduMapAPI_Map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3EC12179C71400347704 /* BaiduMapAPI_Map.framework */; };
+		3B1D3EC42179C71900347704 /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3EC32179C71900347704 /* BaiduMapAPI_Search.framework */; };
+		3B1D3EC62179C71D00347704 /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3EC52179C71D00347704 /* BaiduMapAPI_Utils.framework */; };
+		3B1D3ECA2179C72500347704 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3EC82179C72500347704 /* libcrypto.a */; };
+		3B1D3ECB2179C72500347704 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3EC92179C72500347704 /* libssl.a */; };
+		3B1D3ECD2179C72C00347704 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B1D3ECC2179C72C00347704 /* mapapi.bundle */; };
+		3B1D3ECF2179C7A400347704 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3ECE2179C7A400347704 /* libc++.tbd */; };
+		3B1D3ED12179C7AF00347704 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3ED02179C7AF00347704 /* CoreLocation.framework */; };
+		3B1D3ED32179C7BB00347704 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3ED22179C7BB00347704 /* QuartzCore.framework */; };
+		3B1D3ED52179C7C500347704 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3ED42179C7C500347704 /* OpenGLES.framework */; };
+		3B1D3ED72179C7CF00347704 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3ED62179C7CF00347704 /* CoreGraphics.framework */; };
+		3B1D3ED92179C7DB00347704 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1D3ED82179C7DA00347704 /* MobileCoreServices.framework */; };
+		3B1D3EDC2179CBCD00347704 /* RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EDB2179CBCD00347704 /* RootVC.swift */; };
+		3B1D3EDE2179CD3000347704 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EDD2179CD3000347704 /* BaseVC.swift */; };
+		3B1D3EE02179CD9D00347704 /* BaseNAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EDF2179CD9D00347704 /* BaseNAV.swift */; };
+		3B1D3EE22179CDD200347704 /* UIViewController+YuJiaTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EE12179CDD200347704 /* UIViewController+YuJiaTM.swift */; };
+		3B1D3EE42179CE6F00347704 /* ConstantConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EE32179CE6F00347704 /* ConstantConfig.swift */; };
+		3B1D3EE62179CE9E00347704 /* ConstantUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EE52179CE9E00347704 /* ConstantUI.swift */; };
+		3B1D3EE82179CED400347704 /* ConstantText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EE72179CED400347704 /* ConstantText.swift */; };
+		3B1D3EEA2179CFCB00347704 /* ConstantNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EE92179CFCB00347704 /* ConstantNetwork.swift */; };
+		3B1D3EEC2179CFFC00347704 /* ConstantUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EEB2179CFFC00347704 /* ConstantUserDefault.swift */; };
+		3B1D3EEE2179D0CE00347704 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EED2179D0CE00347704 /* DataCenter.swift */; };
+		3B1D3EF02179D0E100347704 /* MessageCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EEF2179D0E100347704 /* MessageCenter.swift */; };
+		3B1D3EF22179D10200347704 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EF12179D10200347704 /* UserDefaultsManager.swift */; };
+		3B1D3EF42179D14900347704 /* RouterDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EF32179D14900347704 /* RouterDefine.swift */; };
+		3B1D3EF82179D4A800347704 /* MainTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EF72179D4A800347704 /* MainTabVC.swift */; };
+		3B1D3EFA2179D5C000347704 /* BaseTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EF92179D5C000347704 /* BaseTableVC.swift */; };
+		3B1D3EFC2179D64D00347704 /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EFB2179D64D00347704 /* BaseCell.swift */; };
+		3B1D3EFE2179D67600347704 /* BaseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3EFD2179D67600347704 /* BaseSection.swift */; };
+		3B1D3F012179D7F800347704 /* BaseReqRspModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3F002179D7F800347704 /* BaseReqRspModel.swift */; };
+		3B1D3F032179D98400347704 /* RouterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1D3F022179D98400347704 /* RouterFactory.swift */; };
+		3B23820221A3DCED00F6B0F2 /* MonitorCarListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820121A3DCED00F6B0F2 /* MonitorCarListVM.swift */; };
+		3B23820421A3DD1500F6B0F2 /* MonitorCarListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820321A3DD1500F6B0F2 /* MonitorCarListVC.swift */; };
+		3B23820621A3DF9200F6B0F2 /* MonitorDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820521A3DF9200F6B0F2 /* MonitorDetailVM.swift */; };
+		3B23820821A3E04000F6B0F2 /* MonitorDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820721A3E04000F6B0F2 /* MonitorDetailVC.swift */; };
+		3B23820B21A3E20F00F6B0F2 /* MyDriversListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820A21A3E20F00F6B0F2 /* MyDriversListVM.swift */; };
+		3B23820D21A3E29B00F6B0F2 /* MyDriversListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820C21A3E29B00F6B0F2 /* MyDriversListVC.swift */; };
+		3B23820F21A3E77100F6B0F2 /* MyDriversEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23820E21A3E77100F6B0F2 /* MyDriversEditVM.swift */; };
+		3B23821121A3E79C00F6B0F2 /* MyDriversEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23821021A3E79C00F6B0F2 /* MyDriversEditVC.swift */; };
+		3B23821421A3F72E00F6B0F2 /* ReminderListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23821321A3F72E00F6B0F2 /* ReminderListVM.swift */; };
+		3B23821621A3F8A900F6B0F2 /* ReminderListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23821521A3F8A900F6B0F2 /* ReminderListVC.swift */; };
+		3B23821821A3F8D900F6B0F2 /* ReminderDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23821721A3F8D900F6B0F2 /* ReminderDetailVM.swift */; };
+		3B23821A21A3F8E700F6B0F2 /* ReminderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B23821921A3F8E700F6B0F2 /* ReminderDetailVC.swift */; };
+		3B349B4221C2499D0052511C /* ErrViewInfo+YuJiaTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B349B4121C2499D0052511C /* ErrViewInfo+YuJiaTM.swift */; };
+		3B46219A21E470A100063724 /* ConstantTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B46219921E470A100063724 /* ConstantTool.swift */; };
+		3B4FDC2D21A64D8400DB82FA /* MyDriversListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC2B21A64D8400DB82FA /* MyDriversListCell.swift */; };
+		3B4FDC2E21A64D8400DB82FA /* MyDriversListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDC2C21A64D8400DB82FA /* MyDriversListCell.xib */; };
+		3B4FDC3121A6853E00DB82FA /* ReminderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC2F21A6853E00DB82FA /* ReminderListCell.swift */; };
+		3B4FDC3221A6853E00DB82FA /* ReminderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3021A6853E00DB82FA /* ReminderListCell.xib */; };
+		3B4FDC3521ABE84B00DB82FA /* ReminderDetailTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3321ABE84B00DB82FA /* ReminderDetailTimeCell.swift */; };
+		3B4FDC3621ABE84B00DB82FA /* ReminderDetailTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3421ABE84B00DB82FA /* ReminderDetailTimeCell.xib */; };
+		3B4FDC3921ABE86A00DB82FA /* ReminderDetailContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3721ABE86A00DB82FA /* ReminderDetailContentCell.swift */; };
+		3B4FDC3A21ABE86A00DB82FA /* ReminderDetailContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3821ABE86A00DB82FA /* ReminderDetailContentCell.xib */; };
+		3B4FDC3D21ABE88300DB82FA /* ReminderDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3B21ABE88300DB82FA /* ReminderDetailImageCell.swift */; };
+		3B4FDC3E21ABE88300DB82FA /* ReminderDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3C21ABE88300DB82FA /* ReminderDetailImageCell.xib */; };
+		3B4FDC4121ABE8B700DB82FA /* ReminderDetailButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4FDC3F21ABE8B700DB82FA /* ReminderDetailButtonCell.swift */; };
+		3B4FDC4221ABE8B700DB82FA /* ReminderDetailButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4FDC4021ABE8B700DB82FA /* ReminderDetailButtonCell.xib */; };
+		3B52798021806418002C3CFF /* UserCenterUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52797E21806418002C3CFF /* UserCenterUserCell.swift */; };
+		3B52798121806418002C3CFF /* UserCenterUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52797F21806418002C3CFF /* UserCenterUserCell.xib */; };
+		3B52798421806426002C3CFF /* UserCenterRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52798221806426002C3CFF /* UserCenterRowCell.swift */; };
+		3B52798521806426002C3CFF /* UserCenterRowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B52798321806426002C3CFF /* UserCenterRowCell.xib */; };
+		3B52798821815130002C3CFF /* AlarmListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52798721815130002C3CFF /* AlarmListVM.swift */; };
+		3B52798A21815139002C3CFF /* AlarmListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52798921815139002C3CFF /* AlarmListVC.swift */; };
+		3B52798C218153C4002C3CFF /* AlarmFilterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52798B218153C4002C3CFF /* AlarmFilterVM.swift */; };
+		3B52798E218153CF002C3CFF /* AlarmFilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52798D218153CF002C3CFF /* AlarmFilterVC.swift */; };
+		3B527993218154EA002C3CFF /* AlarmDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B527992218154EA002C3CFF /* AlarmDetailVM.swift */; };
+		3B527995218154F3002C3CFF /* AlarmDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B527994218154F3002C3CFF /* AlarmDetailVC.swift */; };
+		3B52799821815887002C3CFF /* UserListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52799721815887002C3CFF /* UserListVM.swift */; };
+		3B52799A21815891002C3CFF /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52799921815891002C3CFF /* UserListVC.swift */; };
+		3B52799C21815898002C3CFF /* UserEditVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52799B21815898002C3CFF /* UserEditVM.swift */; };
+		3B52799E218158A3002C3CFF /* UserEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B52799D218158A3002C3CFF /* UserEditVC.swift */; };
+		3B5279A121815C00002C3CFF /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279A021815C00002C3CFF /* AboutVC.swift */; };
+		3B5279A4218160C7002C3CFF /* HistoryStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279A2218160C7002C3CFF /* HistoryStateCell.swift */; };
+		3B5279A5218160C7002C3CFF /* HistoryStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279A3218160C7002C3CFF /* HistoryStateCell.xib */; };
+		3B5279A8218160F9002C3CFF /* HistoryExamineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279A6218160F9002C3CFF /* HistoryExamineCell.swift */; };
+		3B5279A9218160F9002C3CFF /* HistoryExamineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279A7218160F9002C3CFF /* HistoryExamineCell.xib */; };
+		3B5279AC21816129002C3CFF /* HistoryTrendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279AA21816129002C3CFF /* HistoryTrendCell.swift */; };
+		3B5279AD21816129002C3CFF /* HistoryTrendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279AB21816129002C3CFF /* HistoryTrendCell.xib */; };
+		3B5279B021816787002C3CFF /* AlarmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279AE21816787002C3CFF /* AlarmListCell.swift */; };
+		3B5279B121816787002C3CFF /* AlarmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279AF21816787002C3CFF /* AlarmListCell.xib */; };
+		3B5279B421816AB7002C3CFF /* AlarmFilterSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279B221816AB7002C3CFF /* AlarmFilterSelectCell.swift */; };
+		3B5279B521816AB7002C3CFF /* AlarmFilterSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279B321816AB7002C3CFF /* AlarmFilterSelectCell.xib */; };
+		3B5279B821816AD1002C3CFF /* AlarmFilterInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279B621816AD1002C3CFF /* AlarmFilterInputCell.swift */; };
+		3B5279B921816AD1002C3CFF /* AlarmFilterInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279B721816AD1002C3CFF /* AlarmFilterInputCell.xib */; };
+		3B5279BC218189BC002C3CFF /* AlarmDetailAlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279BA218189BC002C3CFF /* AlarmDetailAlarmCell.swift */; };
+		3B5279BD218189BC002C3CFF /* AlarmDetailAlarmCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279BB218189BC002C3CFF /* AlarmDetailAlarmCell.xib */; };
+		3B5279C0218189D5002C3CFF /* AlarmDetailDriverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279BE218189D5002C3CFF /* AlarmDetailDriverCell.swift */; };
+		3B5279C1218189D5002C3CFF /* AlarmDetailDriverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279BF218189D5002C3CFF /* AlarmDetailDriverCell.xib */; };
+		3B5279C421818B60002C3CFF /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279C221818B60002C3CFF /* UserListCell.swift */; };
+		3B5279C521818B60002C3CFF /* UserListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279C321818B60002C3CFF /* UserListCell.xib */; };
+		3B5279C821819E7D002C3CFF /* UserCenterLogoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5279C621819E7D002C3CFF /* UserCenterLogoutCell.swift */; };
+		3B5279C921819E7D002C3CFF /* UserCenterLogoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5279C721819E7D002C3CFF /* UserCenterLogoutCell.xib */; };
+		3B597A5621B0DDE00018E710 /* ReqGetVehicleChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B597A5521B0DDE00018E710 /* ReqGetVehicleChannel.swift */; };
+		3B597A5821B0E2B50018E710 /* ReqGetVehicleGps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B597A5721B0E2B50018E710 /* ReqGetVehicleGps.swift */; };
+		3B597A5A21B114AB0018E710 /* ReqStartVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B597A5921B114AB0018E710 /* ReqStartVideo.swift */; };
+		3B597A5C21B11A550018E710 /* ReqVideoHeartbeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B597A5B21B11A550018E710 /* ReqVideoHeartbeat.swift */; };
+		3B6493342192826F0043A952 /* BigTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6493322192826F0043A952 /* BigTitleCell.swift */; };
+		3B6493352192826F0043A952 /* BigTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6493332192826F0043A952 /* BigTitleCell.xib */; };
+		3B7A6F8E21D0A7F400892FD2 /* VehicleGpsMapVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A6F8D21D0A7F400892FD2 /* VehicleGpsMapVM.swift */; };
+		3B7A6F9021D0A82300892FD2 /* VehicleGpsMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A6F8F21D0A82300892FD2 /* VehicleGpsMapVC.swift */; };
+		3B7A6F9721D0AB8100892FD2 /* RankListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A6F9621D0AB8100892FD2 /* RankListVM.swift */; };
+		3B7A6F9921D0ABA400892FD2 /* RankListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A6F9821D0ABA400892FD2 /* RankListVC.swift */; };
+		3B7A6F9C21D0B7C500892FD2 /* SmartVoiceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A6F9B21D0B7C500892FD2 /* SmartVoiceVM.swift */; };
+		3B7A6F9E21D0B7D000892FD2 /* SmartVoiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A6F9D21D0B7D000892FD2 /* SmartVoiceVC.swift */; };
+		3BB899D621EC204E001FF690 /* ReqGetDynamicConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB899D521EC204E001FF690 /* ReqGetDynamicConfig.swift */; };
+		3BB899E121EC6959001FF690 /* BMKClusterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB899D921EC6959001FF690 /* BMKClusterItem.m */; };
+		3BB899E221EC6959001FF690 /* BMKClusterQuadtree.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB899DB21EC6959001FF690 /* BMKClusterQuadtree.m */; };
+		3BB899E321EC6959001FF690 /* BMKClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB899DD21EC6959001FF690 /* BMKClusterManager.m */; };
+		3BB899E421EC6959001FF690 /* BMKClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BB899DF21EC6959001FF690 /* BMKClusterAlgorithm.m */; };
+		3BBF301321D60B8700994F6C /* TrackReplayVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF301221D60B8700994F6C /* TrackReplayVM.swift */; };
+		3BBF301521D60B9200994F6C /* TrackReplayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBF301421D60B9200994F6C /* TrackReplayVC.swift */; };
+		3BC4417B21AE3F4900202CCF /* AlarmFilterTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4417921AE3F4900202CCF /* AlarmFilterTimeCell.swift */; };
+		3BC4417C21AE3F4900202CCF /* AlarmFilterTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BC4417A21AE3F4900202CCF /* AlarmFilterTimeCell.xib */; };
+		3BC4417E21AE6C9800202CCF /* MyDriversListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4417D21AE6C9800202CCF /* MyDriversListSection.swift */; };
+		3BC4418021AFCE0F00202CCF /* MapCarAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4417F21AFCE0F00202CCF /* MapCarAnnotationView.swift */; };
+		3BE0C6BC2189935700214233 /* HorizontalBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6BB2189935700214233 /* HorizontalBarItemView.swift */; };
+		3BE0C7102189D0C400214233 /* ZFGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6C02189D0C400214233 /* ZFGenericChart.m */; };
+		3BE0C7112189D0C400214233 /* ZFBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6C42189D0C400214233 /* ZFBarChart.m */; };
+		3BE0C7122189D0C400214233 /* ZFBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6C52189D0C400214233 /* ZFBar.m */; };
+		3BE0C7132189D0C400214233 /* UIView+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6C72189D0C400214233 /* UIView+Zirkfied.m */; };
+		3BE0C7142189D0C400214233 /* UIBezierPath+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6C92189D0C400214233 /* UIBezierPath+Zirkfied.m */; };
+		3BE0C7152189D0C400214233 /* UIColor+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6CD2189D0C400214233 /* UIColor+Zirkfied.m */; };
+		3BE0C7162189D0C400214233 /* NSString+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6CF2189D0C400214233 /* NSString+Zirkfied.m */; };
+		3BE0C7172189D0C400214233 /* NSNumber+Zirkfied.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6D02189D0C400214233 /* NSNumber+Zirkfied.m */; };
+		3BE0C7182189D0C400214233 /* ZFCirqueChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6D32189D0C400214233 /* ZFCirqueChart.m */; };
+		3BE0C7192189D0C400214233 /* ZFCirque.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6D52189D0C400214233 /* ZFCirque.m */; };
+		3BE0C71A2189D0C400214233 /* ZFHorizontalAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6D72189D0C400214233 /* ZFHorizontalAxis.m */; };
+		3BE0C71B2189D0C400214233 /* ZFConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6DB2189D0C400214233 /* ZFConst.m */; };
+		3BE0C71C2189D0C400214233 /* ZFMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6DF2189D0C400214233 /* ZFMethod.m */; };
+		3BE0C71D2189D0C400214233 /* ZFPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6E12189D0C400214233 /* ZFPieChart.m */; };
+		3BE0C71E2189D0C400214233 /* ZFPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6E52189D0C400214233 /* ZFPie.m */; };
+		3BE0C71F2189D0C400214233 /* ZFTranslucencePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6E62189D0C400214233 /* ZFTranslucencePath.m */; };
+		3BE0C7202189D0C400214233 /* ZFLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6E92189D0C400214233 /* ZFLineChart.m */; };
+		3BE0C7212189D0C400214233 /* ZFCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6EC2189D0C400214233 /* ZFCircle.m */; };
+		3BE0C7222189D0C400214233 /* ZFLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6ED2189D0C400214233 /* ZFLine.m */; };
+		3BE0C7232189D0C400214233 /* ZFXAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6F02189D0C400214233 /* ZFXAxisLine.m */; };
+		3BE0C7242189D0C400214233 /* ZFYAxisLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6F12189D0C400214233 /* ZFYAxisLine.m */; };
+		3BE0C7252189D0C400214233 /* ZFPopoverLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6F32189D0C400214233 /* ZFPopoverLabel.m */; };
+		3BE0C7262189D0C400214233 /* ZFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6F52189D0C400214233 /* ZFLabel.m */; };
+		3BE0C7272189D0C400214233 /* ZFRadar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6F82189D0C400214233 /* ZFRadar.m */; };
+		3BE0C7282189D0C400214233 /* ZFPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6F92189D0C400214233 /* ZFPolygon.m */; };
+		3BE0C7292189D0C400214233 /* ZFRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C6FA2189D0C400214233 /* ZFRadarChart.m */; };
+		3BE0C72A2189D0C400214233 /* ZFGenericAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C7002189D0C400214233 /* ZFGenericAxis.m */; };
+		3BE0C72B2189D0C400214233 /* ZFGradientAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C7042189D0C400214233 /* ZFGradientAttribute.m */; };
+		3BE0C72C2189D0C400214233 /* ZFCurveAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C7052189D0C400214233 /* ZFCurveAttribute.m */; };
+		3BE0C72D2189D0C400214233 /* ZFWaveChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C7092189D0C400214233 /* ZFWaveChart.m */; };
+		3BE0C72E2189D0C400214233 /* ZFWave.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C70A2189D0C400214233 /* ZFWave.m */; };
+		3BE0C72F2189D0C400214233 /* ZFHorizontalBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C70D2189D0C400214233 /* ZFHorizontalBarChart.m */; };
+		3BE0C7302189D0C400214233 /* ZFHorizontalBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0C70E2189D0C400214233 /* ZFHorizontalBar.m */; };
+		3BEA29A421D31DC600D45356 /* RankListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA29A321D31DC600D45356 /* RankListCell.swift */; };
+		3BEA29A621D31DE700D45356 /* RankListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA29A521D31DE700D45356 /* RankListSection.swift */; };
+		3BEA29A821D34DBF00D45356 /* RankListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BEA29A721D34DBF00D45356 /* RankListCell.xib */; };
+		3BEA29AC21D4639400D45356 /* ReqQueryRankingOfDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA29AB21D4639400D45356 /* ReqQueryRankingOfDrive.swift */; };
+		3BEA29AE21D4661000D45356 /* ReqQueryRankingOfVehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEA29AD21D4661000D45356 /* ReqQueryRankingOfVehicle.swift */; };
+		3BF5A3F321E4CBFB00373F02 /* SettingsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5A3F221E4CBFB00373F02 /* SettingsVM.swift */; };
+		3BF5A3F521E4CC0600373F02 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5A3F421E4CC0600373F02 /* SettingsVC.swift */; };
+		3BF5A3FA21E4CCED00373F02 /* SettingsSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5A3F821E4CCED00373F02 /* SettingsSwitchCell.swift */; };
+		3BF5A3FB21E4CCED00373F02 /* SettingsSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF5A3F921E4CCED00373F02 /* SettingsSwitchCell.xib */; };
+		3BF894CB218FEF5300455B41 /* BaseWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF894CA218FEF5300455B41 /* BaseWebVC.swift */; };
+		3BF894CD21900D1300455B41 /* PrivacyPolicyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF894CC21900D1300455B41 /* PrivacyPolicyVM.swift */; };
+		3BF894CF21900D1D00455B41 /* PrivacyPolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF894CE21900D1D00455B41 /* PrivacyPolicyVC.swift */; };
+		59DB43A47D6E266C9034C20A /* Pods_YuJiaTruckManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62F303AB3200F36C2FCC401 /* Pods_YuJiaTruckManagerTests.framework */; };
+		B02D230322F98B13002B8AA1 /* UserCenterUserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D230122F98B13002B8AA1 /* UserCenterUserInfoCell.swift */; };
+		B02D230422F98B13002B8AA1 /* UserCenterUserInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02D230222F98B13002B8AA1 /* UserCenterUserInfoCell.xib */; };
+		B02D230C22FA7123002B8AA1 /* StoreInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D230A22FA7123002B8AA1 /* StoreInputCell.swift */; };
+		B02D230D22FA7123002B8AA1 /* StoreInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02D230B22FA7123002B8AA1 /* StoreInputCell.xib */; };
+		B02D236322FA7CD7002B8AA1 /* StoreCommonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D236122FA7CD7002B8AA1 /* StoreCommonImageCell.swift */; };
+		B02D236422FA7CD7002B8AA1 /* StoreCommonImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */; };
+		B0B4BC3622D234B3008C9AC7 /* WorkBenchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */; };
+		B0B4BC3822D234D9008C9AC7 /* WorkBenchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */; };
+		B0B4BC3B22D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */; };
+		B0B4BC3C22D23BFB008C9AC7 /* WorkBenchStoreStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0B4BC3A22D23BFB008C9AC7 /* WorkBenchStoreStateCell.xib */; };
+		B0B4BC5822D3499F008C9AC7 /* ReqWorkbenchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC5722D3499F008C9AC7 /* ReqWorkbenchList.swift */; };
+		B0DC20B522EEF48300AF9CB6 /* StoreDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DC20B422EEF48300AF9CB6 /* StoreDetailVC.swift */; };
+		B0DC20B722EEF4A600AF9CB6 /* StoreDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DC20B622EEF4A600AF9CB6 /* StoreDetailVM.swift */; };
+		B0DC20BA22EEF56600AF9CB6 /* StoreDetailCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DC20B822EEF56600AF9CB6 /* StoreDetailCommonCell.swift */; };
+		B0DC20BB22EEF56600AF9CB6 /* StoreDetailCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0DC20B922EEF56600AF9CB6 /* StoreDetailCommonCell.xib */; };
+		C466271B43E00154A235B92A /* Pods_YuJiaTruckManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF5951CB359F14C63722802 /* Pods_YuJiaTruckManager.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B1D3EA12179ABFB00347704 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B1D3E842179ABF900347704 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B1D3E8B2179ABF900347704;
+			remoteInfo = YuJiaTruckManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B13C762217F11D600FF5D8D /* ReqCheckUserExists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqCheckUserExists.swift; sourceTree = "<group>"; };
+		1B13C764217F1F8100FF5D8D /* ReqAdminLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAdminLogin.swift; sourceTree = "<group>"; };
+		1B13C769218051D300FF5D8D /* ReqLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqLogin.swift; sourceTree = "<group>"; };
+		1B13C76B2180543100FF5D8D /* ReqSendCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqSendCode.swift; sourceTree = "<group>"; };
+		1B13C76D21819BFC00FF5D8D /* ReqAddUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAddUser.swift; sourceTree = "<group>"; };
+		1B13C7712182A3B700FF5D8D /* ReqUserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqUserList.swift; sourceTree = "<group>"; };
+		1B13C7B62182F85A00FF5D8D /* ReqAlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAlarmList.swift; sourceTree = "<group>"; };
+		1B13C84C21842CBF00FF5D8D /* ReqDeleteUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqDeleteUser.swift; sourceTree = "<group>"; };
+		1B13C84E2184558000FF5D8D /* ReqRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqRegister.swift; sourceTree = "<group>"; };
+		1B13C8502184614D00FF5D8D /* ReqUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqUserInfo.swift; sourceTree = "<group>"; };
+		1B13C8522186DD6E00FF5D8D /* ReqEditUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqEditUser.swift; sourceTree = "<group>"; };
+		1B13C8562186FE4500FF5D8D /* ReqGetAlarmType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetAlarmType.swift; sourceTree = "<group>"; };
+		1B13C8582187E8B700FF5D8D /* ReqAlarmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAlarmDetail.swift; sourceTree = "<group>"; };
+		1B2E9FFB21D776D800A427F0 /* VehicleGpsSearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsSearchVM.swift; sourceTree = "<group>"; };
+		1B2E9FFF21D7ABE000A427F0 /* VehicleGpsSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsSearchVC.swift; sourceTree = "<group>"; };
+		1B2EA00121DC8D1B00A427F0 /* VehicleGpsGroupManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsGroupManagerVC.swift; sourceTree = "<group>"; };
+		1B2EA00321DC8D5100A427F0 /* VehicleGpsGroupManagerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsGroupManagerVM.swift; sourceTree = "<group>"; };
+		1B2EA00521DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsGroupManagerCell.swift; sourceTree = "<group>"; };
+		1B2EA00621DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleGpsGroupManagerCell.xib; sourceTree = "<group>"; };
+		1B40AE6721D6553B00E3A3A1 /* VehicleGpsHeadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsHeadCell.swift; sourceTree = "<group>"; };
+		1B40AE6821D6553B00E3A3A1 /* VehicleGpsHeadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleGpsHeadCell.xib; sourceTree = "<group>"; };
+		1B40AE6B21D65B1A00E3A3A1 /* VehicleGpsFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsFilterCell.swift; sourceTree = "<group>"; };
+		1B40AE6C21D65B1A00E3A3A1 /* VehicleGpsFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleGpsFilterCell.xib; sourceTree = "<group>"; };
+		1B59F4DD21DD0F3B004012D7 /* VehicleGpsGroupEditVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsGroupEditVM.swift; sourceTree = "<group>"; };
+		1B59F4DF21DD0F7E004012D7 /* VehicleGpsGroupEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsGroupEditVC.swift; sourceTree = "<group>"; };
+		1B7E5CD5218BDBC00012AD59 /* ReqGetAlarmCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetAlarmCount.swift; sourceTree = "<group>"; };
+		1B7E5CD7218BF6930012AD59 /* ReqAlarmTrend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAlarmTrend.swift; sourceTree = "<group>"; };
+		1B928D39219022130054953B /* AlarmImageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmImageListVM.swift; sourceTree = "<group>"; };
+		1B928D3B219022560054953B /* AlarmImageListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmImageListVC.swift; sourceTree = "<group>"; };
+		1B928D3D219023450054953B /* AlarmImageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmImageListCell.xib; sourceTree = "<group>"; };
+		1B928D3E219023450054953B /* AlarmImageListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmImageListCell.swift; sourceTree = "<group>"; };
+		1B928D45219139E10054953B /* HistoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPickerView.swift; sourceTree = "<group>"; };
+		1B928D47219280C00054953B /* ReqGetNewVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetNewVersion.swift; sourceTree = "<group>"; };
+		1B9CACA621D321440060B2A7 /* SmartVoiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartVoiceView.swift; sourceTree = "<group>"; };
+		1B9CACA821D322170060B2A7 /* SmartVoice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SmartVoice.storyboard; sourceTree = "<group>"; };
+		1B9CACAD21D324C60060B2A7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1B9CACB021D324E70060B2A7 /* FZSpeakClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSpeakClass.h; sourceTree = "<group>"; };
+		1B9CACB121D324E70060B2A7 /* FZSpeechRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSpeechRecognizer.m; sourceTree = "<group>"; };
+		1B9CACB221D324E70060B2A7 /* FZSpeechRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSpeechRecognizer.h; sourceTree = "<group>"; };
+		1B9CACB421D325C40060B2A7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1B9CACB621D325CE0060B2A7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B9CACBE21D4614D0060B2A7 /* ReqGetGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetGroups.swift; sourceTree = "<group>"; };
+		1B9CACC021D4637C0060B2A7 /* ReqAddGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAddGroup.swift; sourceTree = "<group>"; };
+		1B9CACC221D464FF0060B2A7 /* ReqDeleteGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqDeleteGroup.swift; sourceTree = "<group>"; };
+		1B9CACC421D466180060B2A7 /* ReqEditGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqEditGroup.swift; sourceTree = "<group>"; };
+		1B9CACC621D4685A0060B2A7 /* ReqQueryAllVehiclesGps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqQueryAllVehiclesGps.swift; sourceTree = "<group>"; };
+		1B9CACC821D5ACB30060B2A7 /* ReqQueryVehiclesGps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqQueryVehiclesGps.swift; sourceTree = "<group>"; };
+		1B9CACCA21D5ADE90060B2A7 /* ReqPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqPlayback.swift; sourceTree = "<group>"; };
+		1B9CACCC21D61CCD0060B2A7 /* VehicleGpsFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsFilterVC.swift; sourceTree = "<group>"; };
+		1B9CACCE21D61D080060B2A7 /* VehicleGpsFilterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsFilterVM.swift; sourceTree = "<group>"; };
+		1BD62AB621A6ACFA003B0C40 /* ReqDriverList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqDriverList.swift; sourceTree = "<group>"; };
+		1BD62ABB21AB92F7003B0C40 /* ReqAddDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAddDriver.swift; sourceTree = "<group>"; };
+		1BD62AC321ABC02B003B0C40 /* ReqEditDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqEditDriver.swift; sourceTree = "<group>"; };
+		1BD62AC521ABCCDC003B0C40 /* ReqDeleteDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqDeleteDriver.swift; sourceTree = "<group>"; };
+		1BD62AC721ABEA57003B0C40 /* ReqMenos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqMenos.swift; sourceTree = "<group>"; };
+		1BD62AC921ACD0C4003B0C40 /* ReqUpdateMenos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqUpdateMenos.swift; sourceTree = "<group>"; };
+		1BD62ACB21ACD481003B0C40 /* ReqDeleteMenos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqDeleteMenos.swift; sourceTree = "<group>"; };
+		1BD62ACD21AD0930003B0C40 /* ReqAddMenos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqAddMenos.swift; sourceTree = "<group>"; };
+		1BD62ACF21AD0B48003B0C40 /* ReqQueryMenos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqQueryMenos.swift; sourceTree = "<group>"; };
+		1BD62AD121AE230A003B0C40 /* ReqUploadMenosImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqUploadMenosImage.swift; sourceTree = "<group>"; };
+		1BD62AD321AE250F003B0C40 /* ReqUploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReqUploadImage.swift; sourceTree = "<group>"; };
+		1BD62AD521AF7509003B0C40 /* RemindPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindPickerView.swift; sourceTree = "<group>"; };
+		1BD62AD721B10A27003B0C40 /* ReqGetCanSendCommandVehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetCanSendCommandVehicles.swift; sourceTree = "<group>"; };
+		1BD62AD921B11091003B0C40 /* ReqSearchtCanSendCommandVehicles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqSearchtCanSendCommandVehicles.swift; sourceTree = "<group>"; };
+		1BFFA71221DDDE0F005DAE8F /* VehicleGpsGroupNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsGroupNameCell.swift; sourceTree = "<group>"; };
+		1BFFA71321DDDE0F005DAE8F /* VehicleGpsGroupNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleGpsGroupNameCell.xib; sourceTree = "<group>"; };
+		1BFFA71621DE2C34005DAE8F /* VehicleGpsAddVehicleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsAddVehicleVC.swift; sourceTree = "<group>"; };
+		1BFFA71821DE2C89005DAE8F /* VehicleGpsAddVehicleVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsAddVehicleVM.swift; sourceTree = "<group>"; };
+		1BFFA71A21DE5962005DAE8F /* VehicleGpsAddGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsAddGroupVC.swift; sourceTree = "<group>"; };
+		1BFFA71C21DE5991005DAE8F /* VehicleGpsAddGroupVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsAddGroupVM.swift; sourceTree = "<group>"; };
+		1BFFA71E21DEE799005DAE8F /* ReqGetAllVehiclesGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetAllVehiclesGroup.swift; sourceTree = "<group>"; };
+		1BFFA72021EC96D1005DAE8F /* iflyMSC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iflyMSC.framework; sourceTree = "<group>"; };
+		3B1757F9217D649800F0C7E9 /* FlashPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPageVC.swift; sourceTree = "<group>"; };
+		3B1757FB217D64A200F0C7E9 /* FlashPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashPageVM.swift; sourceTree = "<group>"; };
+		3B1757FD217D68F400F0C7E9 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3B1757FF217D68FE00F0C7E9 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		3B175802217D9EB400F0C7E9 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		3B175804217D9ED100F0C7E9 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		3B175806217D9ED800F0C7E9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3B17580A217EC1BD00F0C7E9 /* UserCenter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserCenter.storyboard; sourceTree = "<group>"; };
+		3B17580C217EC1C500F0C7E9 /* History.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		3B17580E217EC1D400F0C7E9 /* HistoryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVM.swift; sourceTree = "<group>"; };
+		3B175810217EC1DB00F0C7E9 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		3B175812217EC1EC00F0C7E9 /* UserCenterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterVM.swift; sourceTree = "<group>"; };
+		3B175814217EC1F600F0C7E9 /* UserCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterVC.swift; sourceTree = "<group>"; };
+		3B175816217EF6E200F0C7E9 /* AdminLoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVM.swift; sourceTree = "<group>"; };
+		3B175818217EF6F900F0C7E9 /* AdminLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginVC.swift; sourceTree = "<group>"; };
+		3B17581A217F016800F0C7E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B17581C217F017100F0C7E9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3B17581E217F017B00F0C7E9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3B175820217F01B700F0C7E9 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3B175822217F1DAA00F0C7E9 /* VerifyCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeVM.swift; sourceTree = "<group>"; };
+		3B175824217F1DB800F0C7E9 /* VerifyCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeVC.swift; sourceTree = "<group>"; };
+		3B17D51A21E2E8D600D9C3C6 /* MyWaybillVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaybillVM.swift; sourceTree = "<group>"; };
+		3B17D51C21E2E8DE00D9C3C6 /* MyWaybillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWaybillVC.swift; sourceTree = "<group>"; };
+		3B18F1C021AD452300650BC1 /* MonitorCarListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorCarListCell.swift; sourceTree = "<group>"; };
+		3B18F1C121AD452300650BC1 /* MonitorCarListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonitorCarListCell.xib; sourceTree = "<group>"; };
+		3B18F1C421AE2A7200650BC1 /* ReqGetOnlineCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetOnlineCount.swift; sourceTree = "<group>"; };
+		3B18F1C621AE2CCD00650BC1 /* ReqGetAlarmTypesCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetAlarmTypesCount.swift; sourceTree = "<group>"; };
+		3B1D3E8C2179ABF900347704 /* YuJiaTruckManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuJiaTruckManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1D3E8F2179ABF900347704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B1D3E942179ABF900347704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B1D3E962179ABFB00347704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B1D3E992179ABFB00347704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B1D3E9B2179ABFB00347704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1D3EA02179ABFB00347704 /* YuJiaTruckManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuJiaTruckManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1D3EA42179ABFB00347704 /* YuJiaTruckManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuJiaTruckManagerTests.swift; sourceTree = "<group>"; };
+		3B1D3EA62179ABFB00347704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B1D3EBD2179BA3400347704 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3B1D3EBE2179BA3400347704 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3B1D3EBF2179C71000347704 /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		3B1D3EC12179C71400347704 /* BaiduMapAPI_Map.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Map.framework; sourceTree = "<group>"; };
+		3B1D3EC32179C71900347704 /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		3B1D3EC52179C71D00347704 /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
+		3B1D3EC82179C72500347704 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		3B1D3EC92179C72500347704 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		3B1D3ECC2179C72C00347704 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = BaiduMapAPI_Map.framework/mapapi.bundle; sourceTree = "<group>"; };
+		3B1D3ECE2179C7A400347704 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3B1D3ED02179C7AF00347704 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3B1D3ED22179C7BB00347704 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3B1D3ED42179C7C500347704 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3B1D3ED62179C7CF00347704 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B1D3ED82179C7DA00347704 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3B1D3EDA2179C8D700347704 /* YuJiaTruckManager-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YuJiaTruckManager-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B1D3EDB2179CBCD00347704 /* RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootVC.swift; sourceTree = "<group>"; };
+		3B1D3EDD2179CD3000347704 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		3B1D3EDF2179CD9D00347704 /* BaseNAV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNAV.swift; sourceTree = "<group>"; };
+		3B1D3EE12179CDD200347704 /* UIViewController+YuJiaTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+YuJiaTM.swift"; sourceTree = "<group>"; };
+		3B1D3EE32179CE6F00347704 /* ConstantConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantConfig.swift; sourceTree = "<group>"; };
+		3B1D3EE52179CE9E00347704 /* ConstantUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantUI.swift; sourceTree = "<group>"; };
+		3B1D3EE72179CED400347704 /* ConstantText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantText.swift; sourceTree = "<group>"; };
+		3B1D3EE92179CFCB00347704 /* ConstantNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantNetwork.swift; sourceTree = "<group>"; };
+		3B1D3EEB2179CFFC00347704 /* ConstantUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantUserDefault.swift; sourceTree = "<group>"; };
+		3B1D3EED2179D0CE00347704 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
+		3B1D3EEF2179D0E100347704 /* MessageCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCenter.swift; sourceTree = "<group>"; };
+		3B1D3EF12179D10200347704 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		3B1D3EF32179D14900347704 /* RouterDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterDefine.swift; sourceTree = "<group>"; };
+		3B1D3EF72179D4A800347704 /* MainTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabVC.swift; sourceTree = "<group>"; };
+		3B1D3EF92179D5C000347704 /* BaseTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableVC.swift; sourceTree = "<group>"; };
+		3B1D3EFB2179D64D00347704 /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		3B1D3EFD2179D67600347704 /* BaseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSection.swift; sourceTree = "<group>"; };
+		3B1D3F002179D7F800347704 /* BaseReqRspModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseReqRspModel.swift; sourceTree = "<group>"; };
+		3B1D3F022179D98400347704 /* RouterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterFactory.swift; sourceTree = "<group>"; };
+		3B23820121A3DCED00F6B0F2 /* MonitorCarListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorCarListVM.swift; sourceTree = "<group>"; };
+		3B23820321A3DD1500F6B0F2 /* MonitorCarListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorCarListVC.swift; sourceTree = "<group>"; };
+		3B23820521A3DF9200F6B0F2 /* MonitorDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorDetailVM.swift; sourceTree = "<group>"; };
+		3B23820721A3E04000F6B0F2 /* MonitorDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorDetailVC.swift; sourceTree = "<group>"; };
+		3B23820A21A3E20F00F6B0F2 /* MyDriversListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDriversListVM.swift; sourceTree = "<group>"; };
+		3B23820C21A3E29B00F6B0F2 /* MyDriversListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDriversListVC.swift; sourceTree = "<group>"; };
+		3B23820E21A3E77100F6B0F2 /* MyDriversEditVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDriversEditVM.swift; sourceTree = "<group>"; };
+		3B23821021A3E79C00F6B0F2 /* MyDriversEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDriversEditVC.swift; sourceTree = "<group>"; };
+		3B23821321A3F72E00F6B0F2 /* ReminderListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListVM.swift; sourceTree = "<group>"; };
+		3B23821521A3F8A900F6B0F2 /* ReminderListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListVC.swift; sourceTree = "<group>"; };
+		3B23821721A3F8D900F6B0F2 /* ReminderDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailVM.swift; sourceTree = "<group>"; };
+		3B23821921A3F8E700F6B0F2 /* ReminderDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailVC.swift; sourceTree = "<group>"; };
+		3B349B4121C2499D0052511C /* ErrViewInfo+YuJiaTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ErrViewInfo+YuJiaTM.swift"; sourceTree = "<group>"; };
+		3B46219921E470A100063724 /* ConstantTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantTool.swift; sourceTree = "<group>"; };
+		3B4FDC2B21A64D8400DB82FA /* MyDriversListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDriversListCell.swift; sourceTree = "<group>"; };
+		3B4FDC2C21A64D8400DB82FA /* MyDriversListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyDriversListCell.xib; sourceTree = "<group>"; };
+		3B4FDC2F21A6853E00DB82FA /* ReminderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListCell.swift; sourceTree = "<group>"; };
+		3B4FDC3021A6853E00DB82FA /* ReminderListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderListCell.xib; sourceTree = "<group>"; };
+		3B4FDC3321ABE84B00DB82FA /* ReminderDetailTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailTimeCell.swift; sourceTree = "<group>"; };
+		3B4FDC3421ABE84B00DB82FA /* ReminderDetailTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderDetailTimeCell.xib; sourceTree = "<group>"; };
+		3B4FDC3721ABE86A00DB82FA /* ReminderDetailContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailContentCell.swift; sourceTree = "<group>"; };
+		3B4FDC3821ABE86A00DB82FA /* ReminderDetailContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderDetailContentCell.xib; sourceTree = "<group>"; };
+		3B4FDC3B21ABE88300DB82FA /* ReminderDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailImageCell.swift; sourceTree = "<group>"; };
+		3B4FDC3C21ABE88300DB82FA /* ReminderDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderDetailImageCell.xib; sourceTree = "<group>"; };
+		3B4FDC3F21ABE8B700DB82FA /* ReminderDetailButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailButtonCell.swift; sourceTree = "<group>"; };
+		3B4FDC4021ABE8B700DB82FA /* ReminderDetailButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderDetailButtonCell.xib; sourceTree = "<group>"; };
+		3B52797E21806418002C3CFF /* UserCenterUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterUserCell.swift; sourceTree = "<group>"; };
+		3B52797F21806418002C3CFF /* UserCenterUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCenterUserCell.xib; sourceTree = "<group>"; };
+		3B52798221806426002C3CFF /* UserCenterRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterRowCell.swift; sourceTree = "<group>"; };
+		3B52798321806426002C3CFF /* UserCenterRowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCenterRowCell.xib; sourceTree = "<group>"; };
+		3B52798721815130002C3CFF /* AlarmListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListVM.swift; sourceTree = "<group>"; };
+		3B52798921815139002C3CFF /* AlarmListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListVC.swift; sourceTree = "<group>"; };
+		3B52798B218153C4002C3CFF /* AlarmFilterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmFilterVM.swift; sourceTree = "<group>"; };
+		3B52798D218153CF002C3CFF /* AlarmFilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmFilterVC.swift; sourceTree = "<group>"; };
+		3B527992218154EA002C3CFF /* AlarmDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailVM.swift; sourceTree = "<group>"; };
+		3B527994218154F3002C3CFF /* AlarmDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailVC.swift; sourceTree = "<group>"; };
+		3B52799721815887002C3CFF /* UserListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVM.swift; sourceTree = "<group>"; };
+		3B52799921815891002C3CFF /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
+		3B52799B21815898002C3CFF /* UserEditVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditVM.swift; sourceTree = "<group>"; };
+		3B52799D218158A3002C3CFF /* UserEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditVC.swift; sourceTree = "<group>"; };
+		3B5279A021815C00002C3CFF /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		3B5279A2218160C7002C3CFF /* HistoryStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStateCell.swift; sourceTree = "<group>"; };
+		3B5279A3218160C7002C3CFF /* HistoryStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryStateCell.xib; sourceTree = "<group>"; };
+		3B5279A6218160F9002C3CFF /* HistoryExamineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryExamineCell.swift; sourceTree = "<group>"; };
+		3B5279A7218160F9002C3CFF /* HistoryExamineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryExamineCell.xib; sourceTree = "<group>"; };
+		3B5279AA21816129002C3CFF /* HistoryTrendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTrendCell.swift; sourceTree = "<group>"; };
+		3B5279AB21816129002C3CFF /* HistoryTrendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTrendCell.xib; sourceTree = "<group>"; };
+		3B5279AE21816787002C3CFF /* AlarmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListCell.swift; sourceTree = "<group>"; };
+		3B5279AF21816787002C3CFF /* AlarmListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmListCell.xib; sourceTree = "<group>"; };
+		3B5279B221816AB7002C3CFF /* AlarmFilterSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmFilterSelectCell.swift; sourceTree = "<group>"; };
+		3B5279B321816AB7002C3CFF /* AlarmFilterSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmFilterSelectCell.xib; sourceTree = "<group>"; };
+		3B5279B621816AD1002C3CFF /* AlarmFilterInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmFilterInputCell.swift; sourceTree = "<group>"; };
+		3B5279B721816AD1002C3CFF /* AlarmFilterInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmFilterInputCell.xib; sourceTree = "<group>"; };
+		3B5279BA218189BC002C3CFF /* AlarmDetailAlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailAlarmCell.swift; sourceTree = "<group>"; };
+		3B5279BB218189BC002C3CFF /* AlarmDetailAlarmCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmDetailAlarmCell.xib; sourceTree = "<group>"; };
+		3B5279BE218189D5002C3CFF /* AlarmDetailDriverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailDriverCell.swift; sourceTree = "<group>"; };
+		3B5279BF218189D5002C3CFF /* AlarmDetailDriverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmDetailDriverCell.xib; sourceTree = "<group>"; };
+		3B5279C221818B60002C3CFF /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		3B5279C321818B60002C3CFF /* UserListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListCell.xib; sourceTree = "<group>"; };
+		3B5279C621819E7D002C3CFF /* UserCenterLogoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCenterLogoutCell.swift; sourceTree = "<group>"; };
+		3B5279C721819E7D002C3CFF /* UserCenterLogoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCenterLogoutCell.xib; sourceTree = "<group>"; };
+		3B597A5521B0DDE00018E710 /* ReqGetVehicleChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetVehicleChannel.swift; sourceTree = "<group>"; };
+		3B597A5721B0E2B50018E710 /* ReqGetVehicleGps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetVehicleGps.swift; sourceTree = "<group>"; };
+		3B597A5921B114AB0018E710 /* ReqStartVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqStartVideo.swift; sourceTree = "<group>"; };
+		3B597A5B21B11A550018E710 /* ReqVideoHeartbeat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqVideoHeartbeat.swift; sourceTree = "<group>"; };
+		3B6493322192826F0043A952 /* BigTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTitleCell.swift; sourceTree = "<group>"; };
+		3B6493332192826F0043A952 /* BigTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigTitleCell.xib; sourceTree = "<group>"; };
+		3B7A6F8D21D0A7F400892FD2 /* VehicleGpsMapVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsMapVM.swift; sourceTree = "<group>"; };
+		3B7A6F8F21D0A82300892FD2 /* VehicleGpsMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleGpsMapVC.swift; sourceTree = "<group>"; };
+		3B7A6F9621D0AB8100892FD2 /* RankListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListVM.swift; sourceTree = "<group>"; };
+		3B7A6F9821D0ABA400892FD2 /* RankListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListVC.swift; sourceTree = "<group>"; };
+		3B7A6F9B21D0B7C500892FD2 /* SmartVoiceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVoiceVM.swift; sourceTree = "<group>"; };
+		3B7A6F9D21D0B7D000892FD2 /* SmartVoiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartVoiceVC.swift; sourceTree = "<group>"; };
+		3BB899D521EC204E001FF690 /* ReqGetDynamicConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqGetDynamicConfig.swift; sourceTree = "<group>"; };
+		3BB899D921EC6959001FF690 /* BMKClusterItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterItem.m; sourceTree = "<group>"; };
+		3BB899DA21EC6959001FF690 /* BMKClusterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterManager.h; sourceTree = "<group>"; };
+		3BB899DB21EC6959001FF690 /* BMKClusterQuadtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterQuadtree.m; sourceTree = "<group>"; };
+		3BB899DC21EC6959001FF690 /* BMKClusterAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterAlgorithm.h; sourceTree = "<group>"; };
+		3BB899DD21EC6959001FF690 /* BMKClusterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterManager.m; sourceTree = "<group>"; };
+		3BB899DE21EC6959001FF690 /* BMKClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterItem.h; sourceTree = "<group>"; };
+		3BB899DF21EC6959001FF690 /* BMKClusterAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMKClusterAlgorithm.m; sourceTree = "<group>"; };
+		3BB899E021EC6959001FF690 /* BMKClusterQuadtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMKClusterQuadtree.h; sourceTree = "<group>"; };
+		3BBF301221D60B8700994F6C /* TrackReplayVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackReplayVM.swift; sourceTree = "<group>"; };
+		3BBF301421D60B9200994F6C /* TrackReplayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackReplayVC.swift; sourceTree = "<group>"; };
+		3BC4417921AE3F4900202CCF /* AlarmFilterTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmFilterTimeCell.swift; sourceTree = "<group>"; };
+		3BC4417A21AE3F4900202CCF /* AlarmFilterTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmFilterTimeCell.xib; sourceTree = "<group>"; };
+		3BC4417D21AE6C9800202CCF /* MyDriversListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDriversListSection.swift; sourceTree = "<group>"; };
+		3BC4417F21AFCE0F00202CCF /* MapCarAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCarAnnotationView.swift; sourceTree = "<group>"; };
+		3BE0C6BB2189935700214233 /* HorizontalBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalBarItemView.swift; sourceTree = "<group>"; };
+		3BE0C6BF2189D0C400214233 /* ZFGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericChart.h; sourceTree = "<group>"; };
+		3BE0C6C02189D0C400214233 /* ZFGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericChart.m; sourceTree = "<group>"; };
+		3BE0C6C22189D0C400214233 /* ZFBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBarChart.h; sourceTree = "<group>"; };
+		3BE0C6C32189D0C400214233 /* ZFBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFBar.h; sourceTree = "<group>"; };
+		3BE0C6C42189D0C400214233 /* ZFBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBarChart.m; sourceTree = "<group>"; };
+		3BE0C6C52189D0C400214233 /* ZFBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFBar.m; sourceTree = "<group>"; };
+		3BE0C6C72189D0C400214233 /* UIView+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Zirkfied.m"; sourceTree = "<group>"; };
+		3BE0C6C82189D0C400214233 /* UIColor+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Zirkfied.h"; sourceTree = "<group>"; };
+		3BE0C6C92189D0C400214233 /* UIBezierPath+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Zirkfied.m"; sourceTree = "<group>"; };
+		3BE0C6CA2189D0C400214233 /* NSString+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Zirkfied.h"; sourceTree = "<group>"; };
+		3BE0C6CB2189D0C400214233 /* NSNumber+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Zirkfied.h"; sourceTree = "<group>"; };
+		3BE0C6CC2189D0C400214233 /* UIView+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Zirkfied.h"; sourceTree = "<group>"; };
+		3BE0C6CD2189D0C400214233 /* UIColor+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Zirkfied.m"; sourceTree = "<group>"; };
+		3BE0C6CE2189D0C400214233 /* UIBezierPath+Zirkfied.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Zirkfied.h"; sourceTree = "<group>"; };
+		3BE0C6CF2189D0C400214233 /* NSString+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Zirkfied.m"; sourceTree = "<group>"; };
+		3BE0C6D02189D0C400214233 /* NSNumber+Zirkfied.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Zirkfied.m"; sourceTree = "<group>"; };
+		3BE0C6D22189D0C400214233 /* ZFCirque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCirque.h; sourceTree = "<group>"; };
+		3BE0C6D32189D0C400214233 /* ZFCirqueChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCirqueChart.m; sourceTree = "<group>"; };
+		3BE0C6D42189D0C400214233 /* ZFCirqueChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCirqueChart.h; sourceTree = "<group>"; };
+		3BE0C6D52189D0C400214233 /* ZFCirque.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCirque.m; sourceTree = "<group>"; };
+		3BE0C6D72189D0C400214233 /* ZFHorizontalAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalAxis.m; sourceTree = "<group>"; };
+		3BE0C6D82189D0C400214233 /* ZFHorizontalAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalAxis.h; sourceTree = "<group>"; };
+		3BE0C6DA2189D0C400214233 /* ZFColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFColor.h; sourceTree = "<group>"; };
+		3BE0C6DB2189D0C400214233 /* ZFConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFConst.m; sourceTree = "<group>"; };
+		3BE0C6DC2189D0C400214233 /* ZFChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFChart.h; sourceTree = "<group>"; };
+		3BE0C6DD2189D0C400214233 /* ZFMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFMethod.h; sourceTree = "<group>"; };
+		3BE0C6DE2189D0C400214233 /* ZFConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFConst.h; sourceTree = "<group>"; };
+		3BE0C6DF2189D0C400214233 /* ZFMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFMethod.m; sourceTree = "<group>"; };
+		3BE0C6E12189D0C400214233 /* ZFPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPieChart.m; sourceTree = "<group>"; };
+		3BE0C6E22189D0C400214233 /* ZFPie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPie.h; sourceTree = "<group>"; };
+		3BE0C6E32189D0C400214233 /* ZFTranslucencePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTranslucencePath.h; sourceTree = "<group>"; };
+		3BE0C6E42189D0C400214233 /* ZFPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPieChart.h; sourceTree = "<group>"; };
+		3BE0C6E52189D0C400214233 /* ZFPie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPie.m; sourceTree = "<group>"; };
+		3BE0C6E62189D0C400214233 /* ZFTranslucencePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTranslucencePath.m; sourceTree = "<group>"; };
+		3BE0C6E82189D0C400214233 /* ZFCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCircle.h; sourceTree = "<group>"; };
+		3BE0C6E92189D0C400214233 /* ZFLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLineChart.m; sourceTree = "<group>"; };
+		3BE0C6EA2189D0C400214233 /* ZFLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLine.h; sourceTree = "<group>"; };
+		3BE0C6EB2189D0C400214233 /* ZFLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLineChart.h; sourceTree = "<group>"; };
+		3BE0C6EC2189D0C400214233 /* ZFCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCircle.m; sourceTree = "<group>"; };
+		3BE0C6ED2189D0C400214233 /* ZFLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLine.m; sourceTree = "<group>"; };
+		3BE0C6EF2189D0C400214233 /* ZFPopoverLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPopoverLabel.h; sourceTree = "<group>"; };
+		3BE0C6F02189D0C400214233 /* ZFXAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFXAxisLine.m; sourceTree = "<group>"; };
+		3BE0C6F12189D0C400214233 /* ZFYAxisLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFYAxisLine.m; sourceTree = "<group>"; };
+		3BE0C6F22189D0C400214233 /* ZFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLabel.h; sourceTree = "<group>"; };
+		3BE0C6F32189D0C400214233 /* ZFPopoverLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPopoverLabel.m; sourceTree = "<group>"; };
+		3BE0C6F42189D0C400214233 /* ZFXAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFXAxisLine.h; sourceTree = "<group>"; };
+		3BE0C6F52189D0C400214233 /* ZFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFLabel.m; sourceTree = "<group>"; };
+		3BE0C6F62189D0C400214233 /* ZFYAxisLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFYAxisLine.h; sourceTree = "<group>"; };
+		3BE0C6F82189D0C400214233 /* ZFRadar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRadar.m; sourceTree = "<group>"; };
+		3BE0C6F92189D0C400214233 /* ZFPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFPolygon.m; sourceTree = "<group>"; };
+		3BE0C6FA2189D0C400214233 /* ZFRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFRadarChart.m; sourceTree = "<group>"; };
+		3BE0C6FB2189D0C400214233 /* ZFRadar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRadar.h; sourceTree = "<group>"; };
+		3BE0C6FC2189D0C400214233 /* ZFPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFPolygon.h; sourceTree = "<group>"; };
+		3BE0C6FD2189D0C400214233 /* ZFRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFRadarChart.h; sourceTree = "<group>"; };
+		3BE0C6FF2189D0C400214233 /* ZFGenericAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGenericAxis.h; sourceTree = "<group>"; };
+		3BE0C7002189D0C400214233 /* ZFGenericAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGenericAxis.m; sourceTree = "<group>"; };
+		3BE0C7022189D0C400214233 /* ZFGradientAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFGradientAttribute.h; sourceTree = "<group>"; };
+		3BE0C7032189D0C400214233 /* ZFCurveAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFCurveAttribute.h; sourceTree = "<group>"; };
+		3BE0C7042189D0C400214233 /* ZFGradientAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFGradientAttribute.m; sourceTree = "<group>"; };
+		3BE0C7052189D0C400214233 /* ZFCurveAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFCurveAttribute.m; sourceTree = "<group>"; };
+		3BE0C7072189D0C400214233 /* ZFWaveChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWaveChart.h; sourceTree = "<group>"; };
+		3BE0C7082189D0C400214233 /* ZFWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFWave.h; sourceTree = "<group>"; };
+		3BE0C7092189D0C400214233 /* ZFWaveChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWaveChart.m; sourceTree = "<group>"; };
+		3BE0C70A2189D0C400214233 /* ZFWave.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFWave.m; sourceTree = "<group>"; };
+		3BE0C70C2189D0C400214233 /* ZFHorizontalBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalBar.h; sourceTree = "<group>"; };
+		3BE0C70D2189D0C400214233 /* ZFHorizontalBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalBarChart.m; sourceTree = "<group>"; };
+		3BE0C70E2189D0C400214233 /* ZFHorizontalBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFHorizontalBar.m; sourceTree = "<group>"; };
+		3BE0C70F2189D0C400214233 /* ZFHorizontalBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFHorizontalBarChart.h; sourceTree = "<group>"; };
+		3BEA29A321D31DC600D45356 /* RankListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListCell.swift; sourceTree = "<group>"; };
+		3BEA29A521D31DE700D45356 /* RankListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankListSection.swift; sourceTree = "<group>"; };
+		3BEA29A721D34DBF00D45356 /* RankListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankListCell.xib; sourceTree = "<group>"; };
+		3BEA29AB21D4639400D45356 /* ReqQueryRankingOfDrive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqQueryRankingOfDrive.swift; sourceTree = "<group>"; };
+		3BEA29AD21D4661000D45356 /* ReqQueryRankingOfVehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqQueryRankingOfVehicle.swift; sourceTree = "<group>"; };
+		3BF5A3F221E4CBFB00373F02 /* SettingsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVM.swift; sourceTree = "<group>"; };
+		3BF5A3F421E4CC0600373F02 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		3BF5A3F821E4CCED00373F02 /* SettingsSwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitchCell.swift; sourceTree = "<group>"; };
+		3BF5A3F921E4CCED00373F02 /* SettingsSwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsSwitchCell.xib; sourceTree = "<group>"; };
+		3BF894CA218FEF5300455B41 /* BaseWebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWebVC.swift; sourceTree = "<group>"; };
+		3BF894CC21900D1300455B41 /* PrivacyPolicyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVM.swift; sourceTree = "<group>"; };
+		3BF894CE21900D1D00455B41 /* PrivacyPolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyVC.swift; sourceTree = "<group>"; };
+		6A115A6D11E38697DBB57F42 /* Pods-YuJiaTruckManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuJiaTruckManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-YuJiaTruckManager/Pods-YuJiaTruckManager.release.xcconfig"; sourceTree = "<group>"; };
+		7081FD000BAE33AC5D68CC92 /* Pods-YuJiaTruckManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuJiaTruckManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YuJiaTruckManagerTests/Pods-YuJiaTruckManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FF5951CB359F14C63722802 /* Pods_YuJiaTruckManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuJiaTruckManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		974D4C409A3B135964A8E255 /* Pods-YuJiaTruckManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuJiaTruckManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YuJiaTruckManagerTests/Pods-YuJiaTruckManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B02D230122F98B13002B8AA1 /* UserCenterUserInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCenterUserInfoCell.swift; sourceTree = "<group>"; };
+		B02D230222F98B13002B8AA1 /* UserCenterUserInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCenterUserInfoCell.xib; sourceTree = "<group>"; };
+		B02D230A22FA7123002B8AA1 /* StoreInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreInputCell.swift; sourceTree = "<group>"; };
+		B02D230B22FA7123002B8AA1 /* StoreInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreInputCell.xib; sourceTree = "<group>"; };
+		B02D236122FA7CD7002B8AA1 /* StoreCommonImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCommonImageCell.swift; sourceTree = "<group>"; };
+		B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCommonImageCell.xib; sourceTree = "<group>"; };
+		B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchVM.swift; sourceTree = "<group>"; };
+		B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchVC.swift; sourceTree = "<group>"; };
+		B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchStoreStateCell.swift; sourceTree = "<group>"; };
+		B0B4BC3A22D23BFB008C9AC7 /* WorkBenchStoreStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkBenchStoreStateCell.xib; sourceTree = "<group>"; };
+		B0B4BC5722D3499F008C9AC7 /* ReqWorkbenchList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqWorkbenchList.swift; sourceTree = "<group>"; };
+		B0DC20B422EEF48300AF9CB6 /* StoreDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailVC.swift; sourceTree = "<group>"; };
+		B0DC20B622EEF4A600AF9CB6 /* StoreDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailVM.swift; sourceTree = "<group>"; };
+		B0DC20B822EEF56600AF9CB6 /* StoreDetailCommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDetailCommonCell.swift; sourceTree = "<group>"; };
+		B0DC20B922EEF56600AF9CB6 /* StoreDetailCommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreDetailCommonCell.xib; sourceTree = "<group>"; };
+		C62F303AB3200F36C2FCC401 /* Pods_YuJiaTruckManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuJiaTruckManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC624711D0262EADBB8ADCFF /* Pods-YuJiaTruckManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuJiaTruckManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YuJiaTruckManager/Pods-YuJiaTruckManager.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B1D3E892179ABF900347704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9CACB721D325CE0060B2A7 /* AVFoundation.framework in Frameworks */,
+				1B9CACB521D325C40060B2A7 /* AudioToolbox.framework in Frameworks */,
+				1B9CACAE21D324C60060B2A7 /* libz.tbd in Frameworks */,
+				3B175821217F01B700F0C7E9 /* libsqlite3.0.tbd in Frameworks */,
+				3B17581F217F017B00F0C7E9 /* CoreTelephony.framework in Frameworks */,
+				3B17581D217F017100F0C7E9 /* Security.framework in Frameworks */,
+				1BFFA72121EC96D1005DAE8F /* iflyMSC.framework in Frameworks */,
+				3B17581B217F016800F0C7E9 /* SystemConfiguration.framework in Frameworks */,
+				3B1D3ED92179C7DB00347704 /* MobileCoreServices.framework in Frameworks */,
+				3B1D3ED72179C7CF00347704 /* CoreGraphics.framework in Frameworks */,
+				3B1D3ED52179C7C500347704 /* OpenGLES.framework in Frameworks */,
+				3B1D3ED32179C7BB00347704 /* QuartzCore.framework in Frameworks */,
+				3B1D3ED12179C7AF00347704 /* CoreLocation.framework in Frameworks */,
+				3B1D3ECF2179C7A400347704 /* libc++.tbd in Frameworks */,
+				C466271B43E00154A235B92A /* Pods_YuJiaTruckManager.framework in Frameworks */,
+				3B1D3EC02179C71000347704 /* BaiduMapAPI_Base.framework in Frameworks */,
+				3B1D3ECB2179C72500347704 /* libssl.a in Frameworks */,
+				3B1D3ECA2179C72500347704 /* libcrypto.a in Frameworks */,
+				3B1D3EC42179C71900347704 /* BaiduMapAPI_Search.framework in Frameworks */,
+				3B1D3EC62179C71D00347704 /* BaiduMapAPI_Utils.framework in Frameworks */,
+				3B1D3EC22179C71400347704 /* BaiduMapAPI_Map.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1D3E9D2179ABFB00347704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DB43A47D6E266C9034C20A /* Pods_YuJiaTruckManagerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B928D38219021BD0054953B /* AlarmImageList */ = {
+			isa = PBXGroup;
+			children = (
+				1B928D39219022130054953B /* AlarmImageListVM.swift */,
+				1B928D3B219022560054953B /* AlarmImageListVC.swift */,
+				1B928D3E219023450054953B /* AlarmImageListCell.swift */,
+				1B928D3D219023450054953B /* AlarmImageListCell.xib */,
+			);
+			path = AlarmImageList;
+			sourceTree = "<group>";
+		};
+		1B9CACAA21D324250060B2A7 /* iflyMSC */ = {
+			isa = PBXGroup;
+			children = (
+				1BFFA72021EC96D1005DAE8F /* iflyMSC.framework */,
+				1B9CACAF21D324E60060B2A7 /* FZSpeakClass */,
+			);
+			path = iflyMSC;
+			sourceTree = "<group>";
+		};
+		1B9CACAF21D324E60060B2A7 /* FZSpeakClass */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CACB021D324E70060B2A7 /* FZSpeakClass.h */,
+				1B9CACB121D324E70060B2A7 /* FZSpeechRecognizer.m */,
+				1B9CACB221D324E70060B2A7 /* FZSpeechRecognizer.h */,
+			);
+			path = FZSpeakClass;
+			sourceTree = "<group>";
+		};
+		3B1757F8217D613D00F0C7E9 /* FlashPage */ = {
+			isa = PBXGroup;
+			children = (
+				3B1757FB217D64A200F0C7E9 /* FlashPageVM.swift */,
+				3B1757F9217D649800F0C7E9 /* FlashPageVC.swift */,
+			);
+			path = FlashPage;
+			sourceTree = "<group>";
+		};
+		3B175801217D9DBE00F0C7E9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3B175802217D9EB400F0C7E9 /* Login.storyboard */,
+				3B175804217D9ED100F0C7E9 /* LoginVM.swift */,
+				3B175806217D9ED800F0C7E9 /* LoginVC.swift */,
+				3B175816217EF6E200F0C7E9 /* AdminLoginVM.swift */,
+				3B175818217EF6F900F0C7E9 /* AdminLoginVC.swift */,
+				3B175822217F1DAA00F0C7E9 /* VerifyCodeVM.swift */,
+				3B175824217F1DB800F0C7E9 /* VerifyCodeVC.swift */,
+				3BF894CC21900D1300455B41 /* PrivacyPolicyVM.swift */,
+				3BF894CE21900D1D00455B41 /* PrivacyPolicyVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3B175808217EBFE400F0C7E9 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3B17580C217EC1C500F0C7E9 /* History.storyboard */,
+				3B17580E217EC1D400F0C7E9 /* HistoryVM.swift */,
+				3B175810217EC1DB00F0C7E9 /* HistoryVC.swift */,
+				3B5279A2218160C7002C3CFF /* HistoryStateCell.swift */,
+				3B5279A3218160C7002C3CFF /* HistoryStateCell.xib */,
+				3B5279A6218160F9002C3CFF /* HistoryExamineCell.swift */,
+				3B5279A7218160F9002C3CFF /* HistoryExamineCell.xib */,
+				3B5279AA21816129002C3CFF /* HistoryTrendCell.swift */,
+				3B5279AB21816129002C3CFF /* HistoryTrendCell.xib */,
+				3BE0C6BB2189935700214233 /* HorizontalBarItemView.swift */,
+				1B928D45219139E10054953B /* HistoryPickerView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		3B175809217EBFF500F0C7E9 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B17580A217EC1BD00F0C7E9 /* UserCenter.storyboard */,
+				3B52797921805C3C002C3CFF /* UserCenter */,
+				3BF5A3F121E4CBE600373F02 /* Settings */,
+				3B527986218150B4002C3CFF /* AlarmList */,
+				3B52799121815495002C3CFF /* AlarmDetail */,
+				1B928D38219021BD0054953B /* AlarmImageList */,
+				3BBF301121D60B2F00994F6C /* TrackReplay */,
+				3B5279962181552A002C3CFF /* UserManage */,
+				3B52799F21815B79002C3CFF /* AboutUs */,
+				3B23820021A3DBCA00F6B0F2 /* Monitor */,
+				3B23820921A3E18C00F6B0F2 /* MyDrivers */,
+				3B23821221A3F16D00F6B0F2 /* Reminder */,
+				3B7A6F8C21D0A7C200892FD2 /* VehicleGps */,
+				3B7A6F9521D0AB5D00892FD2 /* RankList */,
+				3B17D51921E2E88C00D9C3C6 /* MyWaybill */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		3B17D51921E2E88C00D9C3C6 /* MyWaybill */ = {
+			isa = PBXGroup;
+			children = (
+				3B17D51A21E2E8D600D9C3C6 /* MyWaybillVM.swift */,
+				3B17D51C21E2E8DE00D9C3C6 /* MyWaybillVC.swift */,
+			);
+			path = MyWaybill;
+			sourceTree = "<group>";
+		};
+		3B1D3E832179ABF900347704 = {
+			isa = PBXGroup;
+			children = (
+				3B1D3E8E2179ABF900347704 /* YuJiaTruckManager */,
+				3B1D3EA32179ABFB00347704 /* YuJiaTruckManagerTests */,
+				3B1D3E8D2179ABF900347704 /* Products */,
+				BFCF7DC4DF8E33BCFAD9F366 /* Pods */,
+				D80600C55DCB56A2F8E18753 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B1D3E8D2179ABF900347704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3E8C2179ABF900347704 /* YuJiaTruckManager.app */,
+				3B1D3EA02179ABFB00347704 /* YuJiaTruckManagerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B1D3E8E2179ABF900347704 /* YuJiaTruckManager */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EAF2179B85200347704 /* UI */,
+				3B1D3EB02179B87900347704 /* BusinessLogic */,
+				3B1D3EB12179B88100347704 /* Utils */,
+				3B1D3EB22179B88900347704 /* External */,
+				3B1D3E8F2179ABF900347704 /* AppDelegate.swift */,
+				3B1D3E932179ABF900347704 /* Main.storyboard */,
+				3B1D3E962179ABFB00347704 /* Assets.xcassets */,
+				3B1D3E982179ABFB00347704 /* LaunchScreen.storyboard */,
+				3B1D3E9B2179ABFB00347704 /* Info.plist */,
+			);
+			path = YuJiaTruckManager;
+			sourceTree = "<group>";
+		};
+		3B1D3EA32179ABFB00347704 /* YuJiaTruckManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EA42179ABFB00347704 /* YuJiaTruckManagerTests.swift */,
+				3B1D3EA62179ABFB00347704 /* Info.plist */,
+			);
+			path = YuJiaTruckManagerTests;
+			sourceTree = "<group>";
+		};
+		3B1D3EAF2179B85200347704 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EB32179B92D00347704 /* Root */,
+				B0B4BC3422D23466008C9AC7 /* WorkBench */,
+				3B1D3EFF2179D77D00347704 /* Home */,
+				3B175808217EBFE400F0C7E9 /* History */,
+				3B175809217EBFF500F0C7E9 /* UserCenter */,
+				3B1757F8217D613D00F0C7E9 /* FlashPage */,
+				3B175801217D9DBE00F0C7E9 /* Login */,
+				3B7A6F9A21D0B15200892FD2 /* SmartVoice */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3B1D3EB02179B87900347704 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EB42179B93900347704 /* DataCenter */,
+				3B1D3EB52179B95000347704 /* MessageCenter */,
+				3B1D3EB62179B96000347704 /* Router */,
+				3B1D3EB72179B97400347704 /* HttpRequest */,
+				3B1D3EB82179B98300347704 /* UserDefault */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		3B1D3EB12179B88100347704 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EB92179B9DD00347704 /* Constants */,
+				3B1D3EBA2179B9F600347704 /* Category */,
+				3B1D3EBB2179BA0600347704 /* SwiftHybrid */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3B1D3EB22179B88900347704 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CACAA21D324250060B2A7 /* iflyMSC */,
+				3BE0C6BD2189D0C400214233 /* ZFChart */,
+				3B1D3EBC2179BA1600347704 /* BaiduMap */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		3B1D3EB32179B92D00347704 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EDB2179CBCD00347704 /* RootVC.swift */,
+				3B1D3EF72179D4A800347704 /* MainTabVC.swift */,
+				3B1D3EDD2179CD3000347704 /* BaseVC.swift */,
+				3B1D3EDF2179CD9D00347704 /* BaseNAV.swift */,
+				3BF894CA218FEF5300455B41 /* BaseWebVC.swift */,
+				3B1D3EF92179D5C000347704 /* BaseTableVC.swift */,
+				3B1D3EFB2179D64D00347704 /* BaseCell.swift */,
+				3B1D3EFD2179D67600347704 /* BaseSection.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		3B1D3EB42179B93900347704 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EED2179D0CE00347704 /* DataCenter.swift */,
+			);
+			path = DataCenter;
+			sourceTree = "<group>";
+		};
+		3B1D3EB52179B95000347704 /* MessageCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EEF2179D0E100347704 /* MessageCenter.swift */,
+			);
+			path = MessageCenter;
+			sourceTree = "<group>";
+		};
+		3B1D3EB62179B96000347704 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EF32179D14900347704 /* RouterDefine.swift */,
+				3B1D3F022179D98400347704 /* RouterFactory.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3B1D3EB72179B97400347704 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3F002179D7F800347704 /* BaseReqRspModel.swift */,
+				3BB899D521EC204E001FF690 /* ReqGetDynamicConfig.swift */,
+				1B13C762217F11D600FF5D8D /* ReqCheckUserExists.swift */,
+				1B13C84E2184558000FF5D8D /* ReqRegister.swift */,
+				1B13C764217F1F8100FF5D8D /* ReqAdminLogin.swift */,
+				1B13C769218051D300FF5D8D /* ReqLogin.swift */,
+				1B13C8502184614D00FF5D8D /* ReqUserInfo.swift */,
+				1B13C76B2180543100FF5D8D /* ReqSendCode.swift */,
+				1B13C76D21819BFC00FF5D8D /* ReqAddUser.swift */,
+				1B13C84C21842CBF00FF5D8D /* ReqDeleteUser.swift */,
+				1B13C8522186DD6E00FF5D8D /* ReqEditUser.swift */,
+				1B13C7712182A3B700FF5D8D /* ReqUserList.swift */,
+				1B13C8562186FE4500FF5D8D /* ReqGetAlarmType.swift */,
+				1B13C7B62182F85A00FF5D8D /* ReqAlarmList.swift */,
+				1B13C8582187E8B700FF5D8D /* ReqAlarmDetail.swift */,
+				1B7E5CD5218BDBC00012AD59 /* ReqGetAlarmCount.swift */,
+				3B18F1C421AE2A7200650BC1 /* ReqGetOnlineCount.swift */,
+				3B18F1C621AE2CCD00650BC1 /* ReqGetAlarmTypesCount.swift */,
+				1B7E5CD7218BF6930012AD59 /* ReqAlarmTrend.swift */,
+				1B928D47219280C00054953B /* ReqGetNewVersion.swift */,
+				1BD62AB621A6ACFA003B0C40 /* ReqDriverList.swift */,
+				1BD62ABB21AB92F7003B0C40 /* ReqAddDriver.swift */,
+				1BD62AC321ABC02B003B0C40 /* ReqEditDriver.swift */,
+				1BD62AC521ABCCDC003B0C40 /* ReqDeleteDriver.swift */,
+				1BD62AC721ABEA57003B0C40 /* ReqMenos.swift */,
+				1BD62AC921ACD0C4003B0C40 /* ReqUpdateMenos.swift */,
+				1BD62ACB21ACD481003B0C40 /* ReqDeleteMenos.swift */,
+				1BD62ACD21AD0930003B0C40 /* ReqAddMenos.swift */,
+				1BD62ACF21AD0B48003B0C40 /* ReqQueryMenos.swift */,
+				1BD62AD321AE250F003B0C40 /* ReqUploadImage.swift */,
+				1BD62AD121AE230A003B0C40 /* ReqUploadMenosImage.swift */,
+				3B597A5521B0DDE00018E710 /* ReqGetVehicleChannel.swift */,
+				3B597A5721B0E2B50018E710 /* ReqGetVehicleGps.swift */,
+				3B597A5921B114AB0018E710 /* ReqStartVideo.swift */,
+				3B597A5B21B11A550018E710 /* ReqVideoHeartbeat.swift */,
+				1BD62AD721B10A27003B0C40 /* ReqGetCanSendCommandVehicles.swift */,
+				1BD62AD921B11091003B0C40 /* ReqSearchtCanSendCommandVehicles.swift */,
+				3BEA29AB21D4639400D45356 /* ReqQueryRankingOfDrive.swift */,
+				3BEA29AD21D4661000D45356 /* ReqQueryRankingOfVehicle.swift */,
+				1B9CACBE21D4614D0060B2A7 /* ReqGetGroups.swift */,
+				1B9CACC021D4637C0060B2A7 /* ReqAddGroup.swift */,
+				1B9CACC221D464FF0060B2A7 /* ReqDeleteGroup.swift */,
+				1B9CACC421D466180060B2A7 /* ReqEditGroup.swift */,
+				1BFFA71E21DEE799005DAE8F /* ReqGetAllVehiclesGroup.swift */,
+				1B9CACC621D4685A0060B2A7 /* ReqQueryAllVehiclesGps.swift */,
+				1B9CACC821D5ACB30060B2A7 /* ReqQueryVehiclesGps.swift */,
+				1B9CACCA21D5ADE90060B2A7 /* ReqPlayback.swift */,
+				B0B4BC5722D3499F008C9AC7 /* ReqWorkbenchList.swift */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		3B1D3EB82179B98300347704 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EF12179D10200347704 /* UserDefaultsManager.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		3B1D3EB92179B9DD00347704 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EE32179CE6F00347704 /* ConstantConfig.swift */,
+				3B1D3EE52179CE9E00347704 /* ConstantUI.swift */,
+				3B1D3EE72179CED400347704 /* ConstantText.swift */,
+				3B1D3EE92179CFCB00347704 /* ConstantNetwork.swift */,
+				3B1D3EEB2179CFFC00347704 /* ConstantUserDefault.swift */,
+				3B46219921E470A100063724 /* ConstantTool.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3B1D3EBA2179B9F600347704 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EE12179CDD200347704 /* UIViewController+YuJiaTM.swift */,
+				3B349B4121C2499D0052511C /* ErrViewInfo+YuJiaTM.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3B1D3EBB2179BA0600347704 /* SwiftHybrid */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EDA2179C8D700347704 /* YuJiaTruckManager-Bridging-Header.h */,
+			);
+			path = SwiftHybrid;
+			sourceTree = "<group>";
+		};
+		3B1D3EBC2179BA1600347704 /* BaiduMap */ = {
+			isa = PBXGroup;
+			children = (
+				3BB899D821EC6959001FF690 /* Cluster */,
+				3B1D3ECC2179C72C00347704 /* mapapi.bundle */,
+				3B1D3EC72179C72500347704 /* thirdlibs */,
+				3B1D3EC52179C71D00347704 /* BaiduMapAPI_Utils.framework */,
+				3B1D3EC32179C71900347704 /* BaiduMapAPI_Search.framework */,
+				3B1D3EC12179C71400347704 /* BaiduMapAPI_Map.framework */,
+				3B1D3EBF2179C71000347704 /* BaiduMapAPI_Base.framework */,
+			);
+			path = BaiduMap;
+			sourceTree = "<group>";
+		};
+		3B1D3EC72179C72500347704 /* thirdlibs */ = {
+			isa = PBXGroup;
+			children = (
+				3B1D3EC82179C72500347704 /* libcrypto.a */,
+				3B1D3EC92179C72500347704 /* libssl.a */,
+			);
+			path = thirdlibs;
+			sourceTree = "<group>";
+		};
+		3B1D3EFF2179D77D00347704 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3B1757FF217D68FE00F0C7E9 /* HomeVM.swift */,
+				3B1757FD217D68F400F0C7E9 /* HomeVC.swift */,
+				3B6493322192826F0043A952 /* BigTitleCell.swift */,
+				3B6493332192826F0043A952 /* BigTitleCell.xib */,
+				1B9CACA621D321440060B2A7 /* SmartVoiceView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3B23820021A3DBCA00F6B0F2 /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				3B23820121A3DCED00F6B0F2 /* MonitorCarListVM.swift */,
+				3B23820321A3DD1500F6B0F2 /* MonitorCarListVC.swift */,
+				3B23820521A3DF9200F6B0F2 /* MonitorDetailVM.swift */,
+				3B23820721A3E04000F6B0F2 /* MonitorDetailVC.swift */,
+				3B18F1C021AD452300650BC1 /* MonitorCarListCell.swift */,
+				3B18F1C121AD452300650BC1 /* MonitorCarListCell.xib */,
+				3BC4417F21AFCE0F00202CCF /* MapCarAnnotationView.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		3B23820921A3E18C00F6B0F2 /* MyDrivers */ = {
+			isa = PBXGroup;
+			children = (
+				3B23820A21A3E20F00F6B0F2 /* MyDriversListVM.swift */,
+				3B23820C21A3E29B00F6B0F2 /* MyDriversListVC.swift */,
+				3B23820E21A3E77100F6B0F2 /* MyDriversEditVM.swift */,
+				3B23821021A3E79C00F6B0F2 /* MyDriversEditVC.swift */,
+				3B4FDC2B21A64D8400DB82FA /* MyDriversListCell.swift */,
+				3B4FDC2C21A64D8400DB82FA /* MyDriversListCell.xib */,
+				3BC4417D21AE6C9800202CCF /* MyDriversListSection.swift */,
+			);
+			path = MyDrivers;
+			sourceTree = "<group>";
+		};
+		3B23821221A3F16D00F6B0F2 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				3B23821321A3F72E00F6B0F2 /* ReminderListVM.swift */,
+				3B23821521A3F8A900F6B0F2 /* ReminderListVC.swift */,
+				3B23821721A3F8D900F6B0F2 /* ReminderDetailVM.swift */,
+				3B23821921A3F8E700F6B0F2 /* ReminderDetailVC.swift */,
+				3B4FDC2F21A6853E00DB82FA /* ReminderListCell.swift */,
+				3B4FDC3021A6853E00DB82FA /* ReminderListCell.xib */,
+				3B4FDC3321ABE84B00DB82FA /* ReminderDetailTimeCell.swift */,
+				3B4FDC3421ABE84B00DB82FA /* ReminderDetailTimeCell.xib */,
+				3B4FDC3721ABE86A00DB82FA /* ReminderDetailContentCell.swift */,
+				3B4FDC3821ABE86A00DB82FA /* ReminderDetailContentCell.xib */,
+				3B4FDC3B21ABE88300DB82FA /* ReminderDetailImageCell.swift */,
+				3B4FDC3C21ABE88300DB82FA /* ReminderDetailImageCell.xib */,
+				3B4FDC3F21ABE8B700DB82FA /* ReminderDetailButtonCell.swift */,
+				3B4FDC4021ABE8B700DB82FA /* ReminderDetailButtonCell.xib */,
+				1BD62AD521AF7509003B0C40 /* RemindPickerView.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		3B52797921805C3C002C3CFF /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				3B175812217EC1EC00F0C7E9 /* UserCenterVM.swift */,
+				3B175814217EC1F600F0C7E9 /* UserCenterVC.swift */,
+				3B52797E21806418002C3CFF /* UserCenterUserCell.swift */,
+				3B52797F21806418002C3CFF /* UserCenterUserCell.xib */,
+				3B52798221806426002C3CFF /* UserCenterRowCell.swift */,
+				3B52798321806426002C3CFF /* UserCenterRowCell.xib */,
+				3B5279C621819E7D002C3CFF /* UserCenterLogoutCell.swift */,
+				3B5279C721819E7D002C3CFF /* UserCenterLogoutCell.xib */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		3B527986218150B4002C3CFF /* AlarmList */ = {
+			isa = PBXGroup;
+			children = (
+				3B52798721815130002C3CFF /* AlarmListVM.swift */,
+				3B52798921815139002C3CFF /* AlarmListVC.swift */,
+				3B52798B218153C4002C3CFF /* AlarmFilterVM.swift */,
+				3B52798D218153CF002C3CFF /* AlarmFilterVC.swift */,
+				3B5279AE21816787002C3CFF /* AlarmListCell.swift */,
+				3B5279AF21816787002C3CFF /* AlarmListCell.xib */,
+				3B5279B221816AB7002C3CFF /* AlarmFilterSelectCell.swift */,
+				3B5279B321816AB7002C3CFF /* AlarmFilterSelectCell.xib */,
+				3B5279B621816AD1002C3CFF /* AlarmFilterInputCell.swift */,
+				3B5279B721816AD1002C3CFF /* AlarmFilterInputCell.xib */,
+				3BC4417921AE3F4900202CCF /* AlarmFilterTimeCell.swift */,
+				3BC4417A21AE3F4900202CCF /* AlarmFilterTimeCell.xib */,
+			);
+			path = AlarmList;
+			sourceTree = "<group>";
+		};
+		3B52799121815495002C3CFF /* AlarmDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3B527992218154EA002C3CFF /* AlarmDetailVM.swift */,
+				3B527994218154F3002C3CFF /* AlarmDetailVC.swift */,
+				3B5279BA218189BC002C3CFF /* AlarmDetailAlarmCell.swift */,
+				3B5279BB218189BC002C3CFF /* AlarmDetailAlarmCell.xib */,
+				3B5279BE218189D5002C3CFF /* AlarmDetailDriverCell.swift */,
+				3B5279BF218189D5002C3CFF /* AlarmDetailDriverCell.xib */,
+			);
+			path = AlarmDetail;
+			sourceTree = "<group>";
+		};
+		3B5279962181552A002C3CFF /* UserManage */ = {
+			isa = PBXGroup;
+			children = (
+				3B52799721815887002C3CFF /* UserListVM.swift */,
+				3B52799921815891002C3CFF /* UserListVC.swift */,
+				3B52799B21815898002C3CFF /* UserEditVM.swift */,
+				3B52799D218158A3002C3CFF /* UserEditVC.swift */,
+				3B5279C221818B60002C3CFF /* UserListCell.swift */,
+				3B5279C321818B60002C3CFF /* UserListCell.xib */,
+			);
+			path = UserManage;
+			sourceTree = "<group>";
+		};
+		3B52799F21815B79002C3CFF /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				3B5279A021815C00002C3CFF /* AboutVC.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		3B7A6F8C21D0A7C200892FD2 /* VehicleGps */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A6F8D21D0A7F400892FD2 /* VehicleGpsMapVM.swift */,
+				3B7A6F8F21D0A82300892FD2 /* VehicleGpsMapVC.swift */,
+				1B9CACCE21D61D080060B2A7 /* VehicleGpsFilterVM.swift */,
+				1B9CACCC21D61CCD0060B2A7 /* VehicleGpsFilterVC.swift */,
+				1B2E9FFB21D776D800A427F0 /* VehicleGpsSearchVM.swift */,
+				1B2E9FFF21D7ABE000A427F0 /* VehicleGpsSearchVC.swift */,
+				1B2EA00321DC8D5100A427F0 /* VehicleGpsGroupManagerVM.swift */,
+				1B2EA00121DC8D1B00A427F0 /* VehicleGpsGroupManagerVC.swift */,
+				1BFFA71C21DE5991005DAE8F /* VehicleGpsAddGroupVM.swift */,
+				1BFFA71A21DE5962005DAE8F /* VehicleGpsAddGroupVC.swift */,
+				1B59F4DD21DD0F3B004012D7 /* VehicleGpsGroupEditVM.swift */,
+				1B59F4DF21DD0F7E004012D7 /* VehicleGpsGroupEditVC.swift */,
+				1BFFA71821DE2C89005DAE8F /* VehicleGpsAddVehicleVM.swift */,
+				1BFFA71621DE2C34005DAE8F /* VehicleGpsAddVehicleVC.swift */,
+				1B2EA00521DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.swift */,
+				1B2EA00621DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.xib */,
+				1BFFA71221DDDE0F005DAE8F /* VehicleGpsGroupNameCell.swift */,
+				1BFFA71321DDDE0F005DAE8F /* VehicleGpsGroupNameCell.xib */,
+				1B40AE6721D6553B00E3A3A1 /* VehicleGpsHeadCell.swift */,
+				1B40AE6821D6553B00E3A3A1 /* VehicleGpsHeadCell.xib */,
+				1B40AE6B21D65B1A00E3A3A1 /* VehicleGpsFilterCell.swift */,
+				1B40AE6C21D65B1A00E3A3A1 /* VehicleGpsFilterCell.xib */,
+			);
+			path = VehicleGps;
+			sourceTree = "<group>";
+		};
+		3B7A6F9521D0AB5D00892FD2 /* RankList */ = {
+			isa = PBXGroup;
+			children = (
+				3B7A6F9621D0AB8100892FD2 /* RankListVM.swift */,
+				3B7A6F9821D0ABA400892FD2 /* RankListVC.swift */,
+				3BEA29A321D31DC600D45356 /* RankListCell.swift */,
+				3BEA29A721D34DBF00D45356 /* RankListCell.xib */,
+				3BEA29A521D31DE700D45356 /* RankListSection.swift */,
+			);
+			path = RankList;
+			sourceTree = "<group>";
+		};
+		3B7A6F9A21D0B15200892FD2 /* SmartVoice */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CACA821D322170060B2A7 /* SmartVoice.storyboard */,
+				3B7A6F9B21D0B7C500892FD2 /* SmartVoiceVM.swift */,
+				3B7A6F9D21D0B7D000892FD2 /* SmartVoiceVC.swift */,
+			);
+			path = SmartVoice;
+			sourceTree = "<group>";
+		};
+		3BB899D821EC6959001FF690 /* Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				3BB899DA21EC6959001FF690 /* BMKClusterManager.h */,
+				3BB899DD21EC6959001FF690 /* BMKClusterManager.m */,
+				3BB899DC21EC6959001FF690 /* BMKClusterAlgorithm.h */,
+				3BB899DF21EC6959001FF690 /* BMKClusterAlgorithm.m */,
+				3BB899DE21EC6959001FF690 /* BMKClusterItem.h */,
+				3BB899D921EC6959001FF690 /* BMKClusterItem.m */,
+				3BB899E021EC6959001FF690 /* BMKClusterQuadtree.h */,
+				3BB899DB21EC6959001FF690 /* BMKClusterQuadtree.m */,
+			);
+			path = Cluster;
+			sourceTree = "<group>";
+		};
+		3BBF301121D60B2F00994F6C /* TrackReplay */ = {
+			isa = PBXGroup;
+			children = (
+				3BBF301221D60B8700994F6C /* TrackReplayVM.swift */,
+				3BBF301421D60B9200994F6C /* TrackReplayVC.swift */,
+			);
+			path = TrackReplay;
+			sourceTree = "<group>";
+		};
+		3BE0C6BD2189D0C400214233 /* ZFChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6BE2189D0C400214233 /* ZFGenericChart */,
+				3BE0C6C12189D0C400214233 /* ZFBarChart */,
+				3BE0C6C62189D0C400214233 /* Category */,
+				3BE0C6D12189D0C400214233 /* ZFCirqueChart */,
+				3BE0C6D62189D0C400214233 /* ZFHorizontalAxis */,
+				3BE0C6D92189D0C400214233 /* Other */,
+				3BE0C6E02189D0C400214233 /* ZFPieChart */,
+				3BE0C6E72189D0C400214233 /* ZFLineChart */,
+				3BE0C6EE2189D0C400214233 /* Component */,
+				3BE0C6F72189D0C400214233 /* ZFRadarChart */,
+				3BE0C6FE2189D0C400214233 /* ZFGenericAxis */,
+				3BE0C7012189D0C400214233 /* Model */,
+				3BE0C7062189D0C400214233 /* ZFWaveChart */,
+				3BE0C70B2189D0C400214233 /* ZFHorizontalBarChart */,
+			);
+			path = ZFChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6BE2189D0C400214233 /* ZFGenericChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6BF2189D0C400214233 /* ZFGenericChart.h */,
+				3BE0C6C02189D0C400214233 /* ZFGenericChart.m */,
+			);
+			path = ZFGenericChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6C12189D0C400214233 /* ZFBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6C22189D0C400214233 /* ZFBarChart.h */,
+				3BE0C6C32189D0C400214233 /* ZFBar.h */,
+				3BE0C6C42189D0C400214233 /* ZFBarChart.m */,
+				3BE0C6C52189D0C400214233 /* ZFBar.m */,
+			);
+			path = ZFBarChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6C62189D0C400214233 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6C72189D0C400214233 /* UIView+Zirkfied.m */,
+				3BE0C6C82189D0C400214233 /* UIColor+Zirkfied.h */,
+				3BE0C6C92189D0C400214233 /* UIBezierPath+Zirkfied.m */,
+				3BE0C6CA2189D0C400214233 /* NSString+Zirkfied.h */,
+				3BE0C6CB2189D0C400214233 /* NSNumber+Zirkfied.h */,
+				3BE0C6CC2189D0C400214233 /* UIView+Zirkfied.h */,
+				3BE0C6CD2189D0C400214233 /* UIColor+Zirkfied.m */,
+				3BE0C6CE2189D0C400214233 /* UIBezierPath+Zirkfied.h */,
+				3BE0C6CF2189D0C400214233 /* NSString+Zirkfied.m */,
+				3BE0C6D02189D0C400214233 /* NSNumber+Zirkfied.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		3BE0C6D12189D0C400214233 /* ZFCirqueChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6D22189D0C400214233 /* ZFCirque.h */,
+				3BE0C6D32189D0C400214233 /* ZFCirqueChart.m */,
+				3BE0C6D42189D0C400214233 /* ZFCirqueChart.h */,
+				3BE0C6D52189D0C400214233 /* ZFCirque.m */,
+			);
+			path = ZFCirqueChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6D62189D0C400214233 /* ZFHorizontalAxis */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6D72189D0C400214233 /* ZFHorizontalAxis.m */,
+				3BE0C6D82189D0C400214233 /* ZFHorizontalAxis.h */,
+			);
+			path = ZFHorizontalAxis;
+			sourceTree = "<group>";
+		};
+		3BE0C6D92189D0C400214233 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6DA2189D0C400214233 /* ZFColor.h */,
+				3BE0C6DB2189D0C400214233 /* ZFConst.m */,
+				3BE0C6DC2189D0C400214233 /* ZFChart.h */,
+				3BE0C6DD2189D0C400214233 /* ZFMethod.h */,
+				3BE0C6DE2189D0C400214233 /* ZFConst.h */,
+				3BE0C6DF2189D0C400214233 /* ZFMethod.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		3BE0C6E02189D0C400214233 /* ZFPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6E12189D0C400214233 /* ZFPieChart.m */,
+				3BE0C6E22189D0C400214233 /* ZFPie.h */,
+				3BE0C6E32189D0C400214233 /* ZFTranslucencePath.h */,
+				3BE0C6E42189D0C400214233 /* ZFPieChart.h */,
+				3BE0C6E52189D0C400214233 /* ZFPie.m */,
+				3BE0C6E62189D0C400214233 /* ZFTranslucencePath.m */,
+			);
+			path = ZFPieChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6E72189D0C400214233 /* ZFLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6E82189D0C400214233 /* ZFCircle.h */,
+				3BE0C6E92189D0C400214233 /* ZFLineChart.m */,
+				3BE0C6EA2189D0C400214233 /* ZFLine.h */,
+				3BE0C6EB2189D0C400214233 /* ZFLineChart.h */,
+				3BE0C6EC2189D0C400214233 /* ZFCircle.m */,
+				3BE0C6ED2189D0C400214233 /* ZFLine.m */,
+			);
+			path = ZFLineChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6EE2189D0C400214233 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6EF2189D0C400214233 /* ZFPopoverLabel.h */,
+				3BE0C6F02189D0C400214233 /* ZFXAxisLine.m */,
+				3BE0C6F12189D0C400214233 /* ZFYAxisLine.m */,
+				3BE0C6F22189D0C400214233 /* ZFLabel.h */,
+				3BE0C6F32189D0C400214233 /* ZFPopoverLabel.m */,
+				3BE0C6F42189D0C400214233 /* ZFXAxisLine.h */,
+				3BE0C6F52189D0C400214233 /* ZFLabel.m */,
+				3BE0C6F62189D0C400214233 /* ZFYAxisLine.h */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		3BE0C6F72189D0C400214233 /* ZFRadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6F82189D0C400214233 /* ZFRadar.m */,
+				3BE0C6F92189D0C400214233 /* ZFPolygon.m */,
+				3BE0C6FA2189D0C400214233 /* ZFRadarChart.m */,
+				3BE0C6FB2189D0C400214233 /* ZFRadar.h */,
+				3BE0C6FC2189D0C400214233 /* ZFPolygon.h */,
+				3BE0C6FD2189D0C400214233 /* ZFRadarChart.h */,
+			);
+			path = ZFRadarChart;
+			sourceTree = "<group>";
+		};
+		3BE0C6FE2189D0C400214233 /* ZFGenericAxis */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C6FF2189D0C400214233 /* ZFGenericAxis.h */,
+				3BE0C7002189D0C400214233 /* ZFGenericAxis.m */,
+			);
+			path = ZFGenericAxis;
+			sourceTree = "<group>";
+		};
+		3BE0C7012189D0C400214233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C7022189D0C400214233 /* ZFGradientAttribute.h */,
+				3BE0C7032189D0C400214233 /* ZFCurveAttribute.h */,
+				3BE0C7042189D0C400214233 /* ZFGradientAttribute.m */,
+				3BE0C7052189D0C400214233 /* ZFCurveAttribute.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BE0C7062189D0C400214233 /* ZFWaveChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C7072189D0C400214233 /* ZFWaveChart.h */,
+				3BE0C7082189D0C400214233 /* ZFWave.h */,
+				3BE0C7092189D0C400214233 /* ZFWaveChart.m */,
+				3BE0C70A2189D0C400214233 /* ZFWave.m */,
+			);
+			path = ZFWaveChart;
+			sourceTree = "<group>";
+		};
+		3BE0C70B2189D0C400214233 /* ZFHorizontalBarChart */ = {
+			isa = PBXGroup;
+			children = (
+				3BE0C70C2189D0C400214233 /* ZFHorizontalBar.h */,
+				3BE0C70D2189D0C400214233 /* ZFHorizontalBarChart.m */,
+				3BE0C70E2189D0C400214233 /* ZFHorizontalBar.m */,
+				3BE0C70F2189D0C400214233 /* ZFHorizontalBarChart.h */,
+			);
+			path = ZFHorizontalBarChart;
+			sourceTree = "<group>";
+		};
+		3BF5A3F121E4CBE600373F02 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3BF5A3F221E4CBFB00373F02 /* SettingsVM.swift */,
+				3BF5A3F421E4CC0600373F02 /* SettingsVC.swift */,
+				3BF5A3F821E4CCED00373F02 /* SettingsSwitchCell.swift */,
+				3BF5A3F921E4CCED00373F02 /* SettingsSwitchCell.xib */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B0B4BC3422D23466008C9AC7 /* WorkBench */ = {
+			isa = PBXGroup;
+			children = (
+				B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */,
+				B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */,
+				B0DC20B622EEF4A600AF9CB6 /* StoreDetailVM.swift */,
+				B0DC20B422EEF48300AF9CB6 /* StoreDetailVC.swift */,
+				B02D230A22FA7123002B8AA1 /* StoreInputCell.swift */,
+				B02D230B22FA7123002B8AA1 /* StoreInputCell.xib */,
+				B02D236122FA7CD7002B8AA1 /* StoreCommonImageCell.swift */,
+				B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */,
+				B0DC20B822EEF56600AF9CB6 /* StoreDetailCommonCell.swift */,
+				B0DC20B922EEF56600AF9CB6 /* StoreDetailCommonCell.xib */,
+				B02D230122F98B13002B8AA1 /* UserCenterUserInfoCell.swift */,
+				B02D230222F98B13002B8AA1 /* UserCenterUserInfoCell.xib */,
+				B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */,
+				B0B4BC3A22D23BFB008C9AC7 /* WorkBenchStoreStateCell.xib */,
+			);
+			path = WorkBench;
+			sourceTree = "<group>";
+		};
+		BFCF7DC4DF8E33BCFAD9F366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC624711D0262EADBB8ADCFF /* Pods-YuJiaTruckManager.debug.xcconfig */,
+				6A115A6D11E38697DBB57F42 /* Pods-YuJiaTruckManager.release.xcconfig */,
+				7081FD000BAE33AC5D68CC92 /* Pods-YuJiaTruckManagerTests.debug.xcconfig */,
+				974D4C409A3B135964A8E255 /* Pods-YuJiaTruckManagerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D80600C55DCB56A2F8E18753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B9CACB621D325CE0060B2A7 /* AVFoundation.framework */,
+				1B9CACB421D325C40060B2A7 /* AudioToolbox.framework */,
+				1B9CACAD21D324C60060B2A7 /* libz.tbd */,
+				3B175820217F01B700F0C7E9 /* libsqlite3.0.tbd */,
+				3B17581E217F017B00F0C7E9 /* CoreTelephony.framework */,
+				3B17581C217F017100F0C7E9 /* Security.framework */,
+				3B17581A217F016800F0C7E9 /* SystemConfiguration.framework */,
+				3B1D3ED82179C7DA00347704 /* MobileCoreServices.framework */,
+				3B1D3ED62179C7CF00347704 /* CoreGraphics.framework */,
+				3B1D3ED42179C7C500347704 /* OpenGLES.framework */,
+				3B1D3ED22179C7BB00347704 /* QuartzCore.framework */,
+				3B1D3ED02179C7AF00347704 /* CoreLocation.framework */,
+				3B1D3ECE2179C7A400347704 /* libc++.tbd */,
+				7FF5951CB359F14C63722802 /* Pods_YuJiaTruckManager.framework */,
+				C62F303AB3200F36C2FCC401 /* Pods_YuJiaTruckManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B1D3E8B2179ABF900347704 /* YuJiaTruckManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1D3EA92179ABFB00347704 /* Build configuration list for PBXNativeTarget "YuJiaTruckManager" */;
+			buildPhases = (
+				7B816A562991C2F556930191 /* [CP] Check Pods Manifest.lock */,
+				3B1D3E882179ABF900347704 /* Sources */,
+				3B1D3E892179ABF900347704 /* Frameworks */,
+				3B1D3E8A2179ABF900347704 /* Resources */,
+				42AEC2BA6B24FB83F32711E5 /* [CP] Embed Pods Frameworks */,
+				3B649331219276810043A952 /* Build Number Auto Increase */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuJiaTruckManager;
+			productName = YuJiaTruckManager;
+			productReference = 3B1D3E8C2179ABF900347704 /* YuJiaTruckManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B1D3E9F2179ABFB00347704 /* YuJiaTruckManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1D3EAC2179ABFB00347704 /* Build configuration list for PBXNativeTarget "YuJiaTruckManagerTests" */;
+			buildPhases = (
+				268535549740E77E0B69020F /* [CP] Check Pods Manifest.lock */,
+				3B1D3E9C2179ABFB00347704 /* Sources */,
+				3B1D3E9D2179ABFB00347704 /* Frameworks */,
+				3B1D3E9E2179ABFB00347704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B1D3EA22179ABFB00347704 /* PBXTargetDependency */,
+			);
+			name = YuJiaTruckManagerTests;
+			productName = YuJiaTruckManagerTests;
+			productReference = 3B1D3EA02179ABFB00347704 /* YuJiaTruckManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B1D3E842179ABF900347704 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jiangsu Yu Dao Data Technology";
+				TargetAttributes = {
+					3B1D3E8B2179ABF900347704 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					3B1D3E9F2179ABFB00347704 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3B1D3E8B2179ABF900347704;
+					};
+				};
+			};
+			buildConfigurationList = 3B1D3E872179ABF900347704 /* Build configuration list for PBXProject "YuJiaTruckManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 3B1D3E832179ABF900347704;
+			productRefGroup = 3B1D3E8D2179ABF900347704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B1D3E8B2179ABF900347704 /* YuJiaTruckManager */,
+				3B1D3E9F2179ABFB00347704 /* YuJiaTruckManagerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B1D3E8A2179ABF900347704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6493352192826F0043A952 /* BigTitleCell.xib in Resources */,
+				3B5279C521818B60002C3CFF /* UserListCell.xib in Resources */,
+				1BFFA71521DDDE0F005DAE8F /* VehicleGpsGroupNameCell.xib in Resources */,
+				3B1D3E9A2179ABFB00347704 /* LaunchScreen.storyboard in Resources */,
+				1B40AE6A21D6553B00E3A3A1 /* VehicleGpsHeadCell.xib in Resources */,
+				3B1D3ECD2179C72C00347704 /* mapapi.bundle in Resources */,
+				3B5279B921816AD1002C3CFF /* AlarmFilterInputCell.xib in Resources */,
+				3BEA29A821D34DBF00D45356 /* RankListCell.xib in Resources */,
+				3B5279A9218160F9002C3CFF /* HistoryExamineCell.xib in Resources */,
+				B0B4BC3C22D23BFB008C9AC7 /* WorkBenchStoreStateCell.xib in Resources */,
+				3B52798521806426002C3CFF /* UserCenterRowCell.xib in Resources */,
+				3B5279C921819E7D002C3CFF /* UserCenterLogoutCell.xib in Resources */,
+				3B4FDC4221ABE8B700DB82FA /* ReminderDetailButtonCell.xib in Resources */,
+				3B5279AD21816129002C3CFF /* HistoryTrendCell.xib in Resources */,
+				3B5279C1218189D5002C3CFF /* AlarmDetailDriverCell.xib in Resources */,
+				3B5279BD218189BC002C3CFF /* AlarmDetailAlarmCell.xib in Resources */,
+				3B17580D217EC1C500F0C7E9 /* History.storyboard in Resources */,
+				1B2EA00821DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.xib in Resources */,
+				1B40AE6E21D65B1A00E3A3A1 /* VehicleGpsFilterCell.xib in Resources */,
+				B0DC20BB22EEF56600AF9CB6 /* StoreDetailCommonCell.xib in Resources */,
+				3BC4417C21AE3F4900202CCF /* AlarmFilterTimeCell.xib in Resources */,
+				1B928D3F219023450054953B /* AlarmImageListCell.xib in Resources */,
+				3B4FDC2E21A64D8400DB82FA /* MyDriversListCell.xib in Resources */,
+				3B4FDC3E21ABE88300DB82FA /* ReminderDetailImageCell.xib in Resources */,
+				3BF5A3FB21E4CCED00373F02 /* SettingsSwitchCell.xib in Resources */,
+				3B5279A5218160C7002C3CFF /* HistoryStateCell.xib in Resources */,
+				3B18F1C321AD452300650BC1 /* MonitorCarListCell.xib in Resources */,
+				3B17580B217EC1BD00F0C7E9 /* UserCenter.storyboard in Resources */,
+				3B1D3E972179ABFB00347704 /* Assets.xcassets in Resources */,
+				3B175803217D9EB400F0C7E9 /* Login.storyboard in Resources */,
+				3B4FDC3A21ABE86A00DB82FA /* ReminderDetailContentCell.xib in Resources */,
+				1B9CACA921D322170060B2A7 /* SmartVoice.storyboard in Resources */,
+				B02D230D22FA7123002B8AA1 /* StoreInputCell.xib in Resources */,
+				B02D230422F98B13002B8AA1 /* UserCenterUserInfoCell.xib in Resources */,
+				3B5279B121816787002C3CFF /* AlarmListCell.xib in Resources */,
+				3B4FDC3621ABE84B00DB82FA /* ReminderDetailTimeCell.xib in Resources */,
+				3B52798121806418002C3CFF /* UserCenterUserCell.xib in Resources */,
+				3B4FDC3221A6853E00DB82FA /* ReminderListCell.xib in Resources */,
+				B02D236422FA7CD7002B8AA1 /* StoreCommonImageCell.xib in Resources */,
+				3B1D3E952179ABF900347704 /* Main.storyboard in Resources */,
+				3B5279B521816AB7002C3CFF /* AlarmFilterSelectCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1D3E9E2179ABFB00347704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		268535549740E77E0B69020F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuJiaTruckManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B649331219276810043A952 /* Build Number Auto Increase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Number Auto Increase";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION == Release ]; then\necho \"Bumping build number...\"\nplist=${PROJECT_DIR}/${INFOPLIST_FILE}\n\n#increment the build number (ie 115 to 116)\nbuildnum=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${plist}\")\nif [[ \"${buildnum}\" == \"\" ]]; then\necho \"No build number in $plist\"\nexit 2\nfi\n\nnewbuildnum=$(expr $buildnum + 1)\n/usr/libexec/Plistbuddy -c \"Set CFBundleVersion $newbuildnum\" \"${plist}\"\necho \"Bumped build number to $buildnum\"\n\nfi\n";
+		};
+		42AEC2BA6B24FB83F32711E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuJiaTruckManager/Pods-YuJiaTruckManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuJiaTruckManager/Pods-YuJiaTruckManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YuJiaTruckManager/Pods-YuJiaTruckManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B816A562991C2F556930191 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuJiaTruckManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B1D3E882179ABF900347704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BFFA71B21DE5962005DAE8F /* VehicleGpsAddGroupVC.swift in Sources */,
+				3BBF301521D60B9200994F6C /* TrackReplayVC.swift in Sources */,
+				B0B4BC3622D234B3008C9AC7 /* WorkBenchVM.swift in Sources */,
+				3BE0C7142189D0C400214233 /* UIBezierPath+Zirkfied.m in Sources */,
+				3BE0C7172189D0C400214233 /* NSNumber+Zirkfied.m in Sources */,
+				1B9CACC721D4685A0060B2A7 /* ReqQueryAllVehiclesGps.swift in Sources */,
+				3B23820221A3DCED00F6B0F2 /* MonitorCarListVM.swift in Sources */,
+				3B597A5821B0E2B50018E710 /* ReqGetVehicleGps.swift in Sources */,
+				1B9CACC121D4637C0060B2A7 /* ReqAddGroup.swift in Sources */,
+				3B4FDC3121A6853E00DB82FA /* ReminderListCell.swift in Sources */,
+				3BE0C7252189D0C400214233 /* ZFPopoverLabel.m in Sources */,
+				3B23820B21A3E20F00F6B0F2 /* MyDriversListVM.swift in Sources */,
+				1B9CACC521D466180060B2A7 /* ReqEditGroup.swift in Sources */,
+				1B9CACC321D464FF0060B2A7 /* ReqDeleteGroup.swift in Sources */,
+				3BB899E421EC6959001FF690 /* BMKClusterAlgorithm.m in Sources */,
+				B0DC20B522EEF48300AF9CB6 /* StoreDetailVC.swift in Sources */,
+				3B5279C421818B60002C3CFF /* UserListCell.swift in Sources */,
+				3BE0C72E2189D0C400214233 /* ZFWave.m in Sources */,
+				3B52798E218153CF002C3CFF /* AlarmFilterVC.swift in Sources */,
+				B02D230322F98B13002B8AA1 /* UserCenterUserInfoCell.swift in Sources */,
+				1B13C766217FFE0900FF5D8D /* AdminLoginVM.swift in Sources */,
+				3B1757FA217D649800F0C7E9 /* FlashPageVC.swift in Sources */,
+				1BD62AC821ABEA57003B0C40 /* ReqMenos.swift in Sources */,
+				3BE0C71C2189D0C400214233 /* ZFMethod.m in Sources */,
+				3B1D3EE02179CD9D00347704 /* BaseNAV.swift in Sources */,
+				1B7E5CD8218BF6930012AD59 /* ReqAlarmTrend.swift in Sources */,
+				3BE0C7262189D0C400214233 /* ZFLabel.m in Sources */,
+				3B1D3EEA2179CFCB00347704 /* ConstantNetwork.swift in Sources */,
+				1BD62ADA21B11091003B0C40 /* ReqSearchtCanSendCommandVehicles.swift in Sources */,
+				1B2EA00021D7ABE000A427F0 /* VehicleGpsSearchVC.swift in Sources */,
+				1B13C7722182A3B800FF5D8D /* ReqUserList.swift in Sources */,
+				3B527993218154EA002C3CFF /* AlarmDetailVM.swift in Sources */,
+				1BD62AD821B10A28003B0C40 /* ReqGetCanSendCommandVehicles.swift in Sources */,
+				1B928D40219023450054953B /* AlarmImageListCell.swift in Sources */,
+				3B175800217D68FE00F0C7E9 /* HomeVM.swift in Sources */,
+				3BE0C7242189D0C400214233 /* ZFYAxisLine.m in Sources */,
+				1B13C8592187E8B800FF5D8D /* ReqAlarmDetail.swift in Sources */,
+				3B5279A121815C00002C3CFF /* AboutVC.swift in Sources */,
+				3B527995218154F3002C3CFF /* AlarmDetailVC.swift in Sources */,
+				3B4FDC3921ABE86A00DB82FA /* ReminderDetailContentCell.swift in Sources */,
+				1B2EA00721DC8E4D00A427F0 /* VehicleGpsGroupManagerCell.swift in Sources */,
+				1B13C765217F1F8100FF5D8D /* ReqAdminLogin.swift in Sources */,
+				3BE0C7152189D0C400214233 /* UIColor+Zirkfied.m in Sources */,
+				3BB899E221EC6959001FF690 /* BMKClusterQuadtree.m in Sources */,
+				3BE0C7282189D0C400214233 /* ZFPolygon.m in Sources */,
+				1B13C763217F11D600FF5D8D /* ReqCheckUserExists.swift in Sources */,
+				1B13C8532186DD6E00FF5D8D /* ReqEditUser.swift in Sources */,
+				1B13C8572186FE4500FF5D8D /* ReqGetAlarmType.swift in Sources */,
+				3B7A6F9721D0AB8100892FD2 /* RankListVM.swift in Sources */,
+				3B1D3EEE2179D0CE00347704 /* DataCenter.swift in Sources */,
+				1BD62AD621AF7509003B0C40 /* RemindPickerView.swift in Sources */,
+				1B40AE6D21D65B1A00E3A3A1 /* VehicleGpsFilterCell.swift in Sources */,
+				3B1D3EF22179D10200347704 /* UserDefaultsManager.swift in Sources */,
+				B0B4BC3B22D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift in Sources */,
+				1BFFA71421DDDE0F005DAE8F /* VehicleGpsGroupNameCell.swift in Sources */,
+				3B23821121A3E79C00F6B0F2 /* MyDriversEditVC.swift in Sources */,
+				B0B4BC3822D234D9008C9AC7 /* WorkBenchVC.swift in Sources */,
+				3B1D3EDC2179CBCD00347704 /* RootVC.swift in Sources */,
+				3B597A5C21B11A550018E710 /* ReqVideoHeartbeat.swift in Sources */,
+				3B23820821A3E04000F6B0F2 /* MonitorDetailVC.swift in Sources */,
+				3B175819217EF6F900F0C7E9 /* AdminLoginVC.swift in Sources */,
+				3BE0C72A2189D0C400214233 /* ZFGenericAxis.m in Sources */,
+				3B18F1C521AE2A7200650BC1 /* ReqGetOnlineCount.swift in Sources */,
+				3B23821421A3F72E00F6B0F2 /* ReminderListVM.swift in Sources */,
+				3B5279C821819E7D002C3CFF /* UserCenterLogoutCell.swift in Sources */,
+				B02D236322FA7CD7002B8AA1 /* StoreCommonImageCell.swift in Sources */,
+				1B9CACCD21D61CCD0060B2A7 /* VehicleGpsFilterVC.swift in Sources */,
+				3BB899D621EC204E001FF690 /* ReqGetDynamicConfig.swift in Sources */,
+				1B2E9FFC21D776D800A427F0 /* VehicleGpsSearchVM.swift in Sources */,
+				3B52798021806418002C3CFF /* UserCenterUserCell.swift in Sources */,
+				3B5279AC21816129002C3CFF /* HistoryTrendCell.swift in Sources */,
+				3BC4417E21AE6C9800202CCF /* MyDriversListSection.swift in Sources */,
+				3B1D3EDE2179CD3000347704 /* BaseVC.swift in Sources */,
+				1B59F4DE21DD0F3B004012D7 /* VehicleGpsGroupEditVM.swift in Sources */,
+				3B175815217EC1F600F0C7E9 /* UserCenterVC.swift in Sources */,
+				3BE0C71A2189D0C400214233 /* ZFHorizontalAxis.m in Sources */,
+				3BE0C7122189D0C400214233 /* ZFBar.m in Sources */,
+				1BFFA71721DE2C34005DAE8F /* VehicleGpsAddVehicleVC.swift in Sources */,
+				1BD62ABC21AB92F7003B0C40 /* ReqAddDriver.swift in Sources */,
+				3B5279C0218189D5002C3CFF /* AlarmDetailDriverCell.swift in Sources */,
+				1B9CACCF21D61D080060B2A7 /* VehicleGpsFilterVM.swift in Sources */,
+				1B7E5CD6218BDBC00012AD59 /* ReqGetAlarmCount.swift in Sources */,
+				3BE0C72B2189D0C400214233 /* ZFGradientAttribute.m in Sources */,
+				3BF5A3F521E4CC0600373F02 /* SettingsVC.swift in Sources */,
+				1B13C76C2180543100FF5D8D /* ReqSendCode.swift in Sources */,
+				3B23820421A3DD1500F6B0F2 /* MonitorCarListVC.swift in Sources */,
+				3B7A6F9E21D0B7D000892FD2 /* SmartVoiceVC.swift in Sources */,
+				3BE0C7192189D0C400214233 /* ZFCirque.m in Sources */,
+				3BE0C7292189D0C400214233 /* ZFRadarChart.m in Sources */,
+				1B928D46219139E10054953B /* HistoryPickerView.swift in Sources */,
+				3BB899E321EC6959001FF690 /* BMKClusterManager.m in Sources */,
+				3BB899E121EC6959001FF690 /* BMKClusterItem.m in Sources */,
+				1BFFA71D21DE5991005DAE8F /* VehicleGpsAddGroupVM.swift in Sources */,
+				3B52798A21815139002C3CFF /* AlarmListVC.swift in Sources */,
+				1BD62ACE21AD0930003B0C40 /* ReqAddMenos.swift in Sources */,
+				1B13C84F2184558000FF5D8D /* ReqRegister.swift in Sources */,
+				3B1D3EE42179CE6F00347704 /* ConstantConfig.swift in Sources */,
+				3B175813217EC1EC00F0C7E9 /* UserCenterVM.swift in Sources */,
+				3BE0C7302189D0C400214233 /* ZFHorizontalBar.m in Sources */,
+				3B175805217D9ED100F0C7E9 /* LoginVM.swift in Sources */,
+				1B928D3C219022560054953B /* AlarmImageListVC.swift in Sources */,
+				3BE0C7162189D0C400214233 /* NSString+Zirkfied.m in Sources */,
+				3BE0C7212189D0C400214233 /* ZFCircle.m in Sources */,
+				3B4FDC4121ABE8B700DB82FA /* ReminderDetailButtonCell.swift in Sources */,
+				3BE0C6BC2189935700214233 /* HorizontalBarItemView.swift in Sources */,
+				3B5279B021816787002C3CFF /* AlarmListCell.swift in Sources */,
+				1B2EA00221DC8D1B00A427F0 /* VehicleGpsGroupManagerVC.swift in Sources */,
+				1B13C84D21842CC000FF5D8D /* ReqDeleteUser.swift in Sources */,
+				1B928D3A219022130054953B /* AlarmImageListVM.swift in Sources */,
+				3B52798C218153C4002C3CFF /* AlarmFilterVM.swift in Sources */,
+				1B13C7B72182F85A00FF5D8D /* ReqAlarmList.swift in Sources */,
+				3B1D3EE82179CED400347704 /* ConstantText.swift in Sources */,
+				1B59F4E021DD0F7E004012D7 /* VehicleGpsGroupEditVC.swift in Sources */,
+				3B7A6F9021D0A82300892FD2 /* VehicleGpsMapVC.swift in Sources */,
+				3B23821621A3F8A900F6B0F2 /* ReminderListVC.swift in Sources */,
+				3BEA29A421D31DC600D45356 /* RankListCell.swift in Sources */,
+				3B52798821815130002C3CFF /* AlarmListVM.swift in Sources */,
+				3B52798421806426002C3CFF /* UserCenterRowCell.swift in Sources */,
+				1B13C76E21819BFC00FF5D8D /* ReqAddUser.swift in Sources */,
+				3BE0C71B2189D0C400214233 /* ZFConst.m in Sources */,
+				1B40AE6921D6553B00E3A3A1 /* VehicleGpsHeadCell.swift in Sources */,
+				3B6493342192826F0043A952 /* BigTitleCell.swift in Sources */,
+				3B52799C21815898002C3CFF /* UserEditVM.swift in Sources */,
+				3BE0C71E2189D0C400214233 /* ZFPie.m in Sources */,
+				3BC4417B21AE3F4900202CCF /* AlarmFilterTimeCell.swift in Sources */,
+				3B597A5621B0DDE00018E710 /* ReqGetVehicleChannel.swift in Sources */,
+				3B1D3F012179D7F800347704 /* BaseReqRspModel.swift in Sources */,
+				3BF894CF21900D1D00455B41 /* PrivacyPolicyVC.swift in Sources */,
+				3BEA29AE21D4661000D45356 /* ReqQueryRankingOfVehicle.swift in Sources */,
+				3BBF301321D60B8700994F6C /* TrackReplayVM.swift in Sources */,
+				3BE0C71D2189D0C400214233 /* ZFPieChart.m in Sources */,
+				3B1757FC217D64A200F0C7E9 /* FlashPageVM.swift in Sources */,
+				1BD62AD221AE230A003B0C40 /* ReqUploadMenosImage.swift in Sources */,
+				3B5279A8218160F9002C3CFF /* HistoryExamineCell.swift in Sources */,
+				3B7A6F9921D0ABA400892FD2 /* RankListVC.swift in Sources */,
+				3B5279B821816AD1002C3CFF /* AlarmFilterInputCell.swift in Sources */,
+				3BE0C7102189D0C400214233 /* ZFGenericChart.m in Sources */,
+				1BD62ACA21ACD0C4003B0C40 /* ReqUpdateMenos.swift in Sources */,
+				3BE0C7112189D0C400214233 /* ZFBarChart.m in Sources */,
+				3B1D3EFA2179D5C000347704 /* BaseTableVC.swift in Sources */,
+				3BE0C72F2189D0C400214233 /* ZFHorizontalBarChart.m in Sources */,
+				B02D230C22FA7123002B8AA1 /* StoreInputCell.swift in Sources */,
+				3BF894CD21900D1300455B41 /* PrivacyPolicyVM.swift in Sources */,
+				3B1D3E902179ABF900347704 /* AppDelegate.swift in Sources */,
+				1BD62AC621ABCCDC003B0C40 /* ReqDeleteDriver.swift in Sources */,
+				3B1757FE217D68F400F0C7E9 /* HomeVC.swift in Sources */,
+				3B1D3EF02179D0E100347704 /* MessageCenter.swift in Sources */,
+				1B9CACC921D5ACB30060B2A7 /* ReqQueryVehiclesGps.swift in Sources */,
+				3B17D51B21E2E8D600D9C3C6 /* MyWaybillVM.swift in Sources */,
+				3BE0C7132189D0C400214233 /* UIView+Zirkfied.m in Sources */,
+				B0DC20B722EEF4A600AF9CB6 /* StoreDetailVM.swift in Sources */,
+				3B7A6F9C21D0B7C500892FD2 /* SmartVoiceVM.swift in Sources */,
+				1BD62AD421AE250F003B0C40 /* ReqUploadImage.swift in Sources */,
+				3B1D3EFC2179D64D00347704 /* BaseCell.swift in Sources */,
+				3B52799821815887002C3CFF /* UserListVM.swift in Sources */,
+				3B5279BC218189BC002C3CFF /* AlarmDetailAlarmCell.swift in Sources */,
+				3B18F1C221AD452300650BC1 /* MonitorCarListCell.swift in Sources */,
+				3B1D3EE22179CDD200347704 /* UIViewController+YuJiaTM.swift in Sources */,
+				1BD62ACC21ACD481003B0C40 /* ReqDeleteMenos.swift in Sources */,
+				3BF5A3FA21E4CCED00373F02 /* SettingsSwitchCell.swift in Sources */,
+				3B4FDC2D21A64D8400DB82FA /* MyDriversListCell.swift in Sources */,
+				3B23820F21A3E77100F6B0F2 /* MyDriversEditVM.swift in Sources */,
+				3B17D51D21E2E8DE00D9C3C6 /* MyWaybillVC.swift in Sources */,
+				1B9CACA721D321450060B2A7 /* SmartVoiceView.swift in Sources */,
+				3B5279A4218160C7002C3CFF /* HistoryStateCell.swift in Sources */,
+				3BC4418021AFCE0F00202CCF /* MapCarAnnotationView.swift in Sources */,
+				1B9CACBF21D4614D0060B2A7 /* ReqGetGroups.swift in Sources */,
+				3B4FDC3521ABE84B00DB82FA /* ReminderDetailTimeCell.swift in Sources */,
+				1BD62AC421ABC02B003B0C40 /* ReqEditDriver.swift in Sources */,
+				3B4FDC3D21ABE88300DB82FA /* ReminderDetailImageCell.swift in Sources */,
+				3BE0C7232189D0C400214233 /* ZFXAxisLine.m in Sources */,
+				3BE0C72D2189D0C400214233 /* ZFWaveChart.m in Sources */,
+				3B1D3EEC2179CFFC00347704 /* ConstantUserDefault.swift in Sources */,
+				3BEA29A621D31DE700D45356 /* RankListSection.swift in Sources */,
+				3BF5A3F321E4CBFB00373F02 /* SettingsVM.swift in Sources */,
+				1B9CACCB21D5ADE90060B2A7 /* ReqPlayback.swift in Sources */,
+				3BE0C71F2189D0C400214233 /* ZFTranslucencePath.m in Sources */,
+				3BE0C7222189D0C400214233 /* ZFLine.m in Sources */,
+				1B9CACB321D324E70060B2A7 /* FZSpeechRecognizer.m in Sources */,
+				3B1D3F032179D98400347704 /* RouterFactory.swift in Sources */,
+				3B175811217EC1DB00F0C7E9 /* HistoryVC.swift in Sources */,
+				3B1D3EE62179CE9E00347704 /* ConstantUI.swift in Sources */,
+				1BFFA71F21DEE799005DAE8F /* ReqGetAllVehiclesGroup.swift in Sources */,
+				3B23821A21A3F8E700F6B0F2 /* ReminderDetailVC.swift in Sources */,
+				3BE0C7182189D0C400214233 /* ZFCirqueChart.m in Sources */,
+				3B175807217D9ED800F0C7E9 /* LoginVC.swift in Sources */,
+				3B23820D21A3E29B00F6B0F2 /* MyDriversListVC.swift in Sources */,
+				3B52799A21815891002C3CFF /* UserListVC.swift in Sources */,
+				3BE0C72C2189D0C400214233 /* ZFCurveAttribute.m in Sources */,
+				3B52799E218158A3002C3CFF /* UserEditVC.swift in Sources */,
+				3B1D3EF82179D4A800347704 /* MainTabVC.swift in Sources */,
+				3BEA29AC21D4639400D45356 /* ReqQueryRankingOfDrive.swift in Sources */,
+				1BFFA71921DE2C89005DAE8F /* VehicleGpsAddVehicleVM.swift in Sources */,
+				3B5279B421816AB7002C3CFF /* AlarmFilterSelectCell.swift in Sources */,
+				3B23820621A3DF9200F6B0F2 /* MonitorDetailVM.swift in Sources */,
+				1BD62AD021AD0B48003B0C40 /* ReqQueryMenos.swift in Sources */,
+				3B1D3EFE2179D67600347704 /* BaseSection.swift in Sources */,
+				3B175825217F1DB800F0C7E9 /* VerifyCodeVC.swift in Sources */,
+				1B928D48219280C10054953B /* ReqGetNewVersion.swift in Sources */,
+				1BD62AB721A6ACFA003B0C40 /* ReqDriverList.swift in Sources */,
+				1B13C8512184614D00FF5D8D /* ReqUserInfo.swift in Sources */,
+				3BE0C7202189D0C400214233 /* ZFLineChart.m in Sources */,
+				3BF894CB218FEF5300455B41 /* BaseWebVC.swift in Sources */,
+				3B18F1C721AE2CCD00650BC1 /* ReqGetAlarmTypesCount.swift in Sources */,
+				3B1D3EF42179D14900347704 /* RouterDefine.swift in Sources */,
+				3B7A6F8E21D0A7F400892FD2 /* VehicleGpsMapVM.swift in Sources */,
+				3B46219A21E470A100063724 /* ConstantTool.swift in Sources */,
+				1B2EA00421DC8D5100A427F0 /* VehicleGpsGroupManagerVM.swift in Sources */,
+				B0DC20BA22EEF56600AF9CB6 /* StoreDetailCommonCell.swift in Sources */,
+				3BE0C7272189D0C400214233 /* ZFRadar.m in Sources */,
+				3B349B4221C2499D0052511C /* ErrViewInfo+YuJiaTM.swift in Sources */,
+				B0B4BC5822D3499F008C9AC7 /* ReqWorkbenchList.swift in Sources */,
+				3B17580F217EC1D400F0C7E9 /* HistoryVM.swift in Sources */,
+				3B23821821A3F8D900F6B0F2 /* ReminderDetailVM.swift in Sources */,
+				3B597A5A21B114AB0018E710 /* ReqStartVideo.swift in Sources */,
+				1B13C76A218051D300FF5D8D /* ReqLogin.swift in Sources */,
+				3B175823217F1DAA00F0C7E9 /* VerifyCodeVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B1D3E9C2179ABFB00347704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1D3EA52179ABFB00347704 /* YuJiaTruckManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B1D3EA22179ABFB00347704 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B1D3E8B2179ABF900347704 /* YuJiaTruckManager */;
+			targetProxy = 3B1D3EA12179ABFB00347704 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B1D3E932179ABF900347704 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1D3E942179ABF900347704 /* Base */,
+				3B1D3EBD2179BA3400347704 /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B1D3E982179ABFB00347704 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1D3E992179ABFB00347704 /* Base */,
+				3B1D3EBE2179BA3400347704 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B1D3EA72179ABFB00347704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B1D3EA82179ABFB00347704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B1D3EAA2179ABFB00347704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC624711D0262EADBB8ADCFF /* Pods-YuJiaTruckManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P623LX8B28;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YuJiaTruckManager/External/BaiduMap",
+					"$(PROJECT_DIR)/YuJiaTruckManager/External/iflyMSC",
+				);
+				INFOPLIST_FILE = YuJiaTruckManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YuJiaTruckManager/External/BaiduMap/thirdlibs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireImage\"",
+					"-framework",
+					"\"BlocksKit\"",
+					"-framework",
+					"\"DateToolsSwift\"",
+					"-framework",
+					"\"FSCalendar\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MGJRouter\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"NJKWebViewProgress\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"SimpleImageViewer\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"VehicleKeyboard_swift\"",
+					"-framework",
+					"\"YuDaoComponents\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuDaoData.YuJiaTruckManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YuJiaTruckManager/Utils/SwiftHybrid/YuJiaTruckManager-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3B1D3EAB2179ABFB00347704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A115A6D11E38697DBB57F42 /* Pods-YuJiaTruckManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P623LX8B28;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YuJiaTruckManager/External/BaiduMap",
+					"$(PROJECT_DIR)/YuJiaTruckManager/External/iflyMSC",
+				);
+				INFOPLIST_FILE = YuJiaTruckManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YuJiaTruckManager/External/BaiduMap/thirdlibs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"AlamofireImage\"",
+					"-framework",
+					"\"BlocksKit\"",
+					"-framework",
+					"\"DateToolsSwift\"",
+					"-framework",
+					"\"FSCalendar\"",
+					"-framework",
+					"\"HandyJSON\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MGJRouter\"",
+					"-framework",
+					"\"MJRefresh\"",
+					"-framework",
+					"\"NJKWebViewProgress\"",
+					"-framework",
+					"\"RxCocoa\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"SimpleImageViewer\"",
+					"-framework",
+					"\"SnapKit\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"VehicleKeyboard_swift\"",
+					"-framework",
+					"\"YuDaoComponents\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuDaoData.YuJiaTruckManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YuJiaTruckManager/Utils/SwiftHybrid/YuJiaTruckManager-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3B1D3EAD2179ABFB00347704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7081FD000BAE33AC5D68CC92 /* Pods-YuJiaTruckManagerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P623LX8B28;
+				INFOPLIST_FILE = YuJiaTruckManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuDaoData.YuJiaTruckManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuJiaTruckManager.app/YuJiaTruckManager";
+			};
+			name = Debug;
+		};
+		3B1D3EAE2179ABFB00347704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 974D4C409A3B135964A8E255 /* Pods-YuJiaTruckManagerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P623LX8B28;
+				INFOPLIST_FILE = YuJiaTruckManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuDaoData.YuJiaTruckManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuJiaTruckManager.app/YuJiaTruckManager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B1D3E872179ABF900347704 /* Build configuration list for PBXProject "YuJiaTruckManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1D3EA72179ABFB00347704 /* Debug */,
+				3B1D3EA82179ABFB00347704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B1D3EA92179ABFB00347704 /* Build configuration list for PBXNativeTarget "YuJiaTruckManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1D3EAA2179ABFB00347704 /* Debug */,
+				3B1D3EAB2179ABFB00347704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B1D3EAC2179ABFB00347704 /* Build configuration list for PBXNativeTarget "YuJiaTruckManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1D3EAD2179ABFB00347704 /* Debug */,
+				3B1D3EAE2179ABFB00347704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B1D3E842179ABF900347704 /* Project object */;
+}

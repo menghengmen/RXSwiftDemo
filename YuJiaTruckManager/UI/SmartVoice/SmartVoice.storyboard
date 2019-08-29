@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Smart VoiceVC-->
+        <scene sceneID="Vgt-wn-u1Y">
+            <objects>
+                <viewController storyboardIdentifier="SmartVoiceVC" id="7s6-pk-FR7" customClass="SmartVoiceVC" customModule="YuJiaTruckManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZ7-qM-Ytv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="智能语音" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-iH-0VU">
+                                <rect key="frame" x="32" y="30" width="134" height="40"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好，请问需要唤醒什么功能？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgx-Rx-3bp">
+                                <rect key="frame" x="32" y="85" width="229" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMn-KE-Tz1">
+                                <rect key="frame" x="122.5" y="429" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="17F-kC-awV"/>
+                                    <constraint firstAttribute="height" constant="130" id="nyi-3J-GjR"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_voice"/>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkj-mn-NdZ">
+                                <rect key="frame" x="74" y="145" width="121" height="42"/>
+                                <state key="normal" backgroundImage="icon_smart_monitor"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="P9q-4d-Ccv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjj-Dn-JHD">
+                                <rect key="frame" x="233" y="177" width="65" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="EJj-by-PZq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" backgroundImage="icon_smart_remind"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="OhJ-UU-Q6f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw3-11-hhd">
+                                <rect key="frame" x="54" y="201" width="81" height="28"/>
+                                <state key="normal" backgroundImage="icon_smart_mydriver"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="lMg-KY-Uk6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zd-Ju-75d">
+                                <rect key="frame" x="160" y="219" width="81" height="28"/>
+                                <state key="normal" backgroundImage="icon_smart_alarm"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="fzM-V7-XEW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJG-Tx-F9e">
+                                <rect key="frame" x="241" y="243" width="81" height="28"/>
+                                <state key="normal" backgroundImage="icon_smart_rank"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="iV8-VL-70j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRM-7p-W0P">
+                                <rect key="frame" x="85" y="263" width="99" height="33"/>
+                                <state key="normal" backgroundImage="icon_smart_gps"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="asZ-WM-iRL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvk-rw-hKo">
+                                <rect key="frame" x="195" y="292" width="113" height="40"/>
+                                <state key="normal" backgroundImage="icon_smart_waybill"/>
+                                <connections>
+                                    <action selector="commonClick:" destination="7s6-pk-FR7" eventType="touchUpInside" id="W80-jf-ohT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2hS-gv-WUe" firstAttribute="trailing" secondItem="fjj-Dn-JHD" secondAttribute="trailing" constant="77" id="0Hw-lg-JuW"/>
+                            <constraint firstItem="tkj-mn-NdZ" firstAttribute="leading" secondItem="2hS-gv-WUe" secondAttribute="leading" constant="74" id="2TR-7s-5f1"/>
+                            <constraint firstItem="2hS-gv-WUe" firstAttribute="trailing" secondItem="LJG-Tx-F9e" secondAttribute="trailing" constant="53" id="6t5-AI-k5v"/>
+                            <constraint firstItem="fjj-Dn-JHD" firstAttribute="top" secondItem="sgx-Rx-3bp" secondAttribute="bottom" constant="72" id="JwB-S4-Xv9"/>
+                            <constraint firstItem="8zd-Ju-75d" firstAttribute="top" secondItem="tkj-mn-NdZ" secondAttribute="bottom" constant="32" id="M8I-m3-Yte"/>
+                            <constraint firstItem="sgx-Rx-3bp" firstAttribute="leading" secondItem="2hS-gv-WUe" secondAttribute="leading" constant="32" id="NQt-ey-CR4"/>
+                            <constraint firstItem="Jw3-11-hhd" firstAttribute="top" secondItem="tkj-mn-NdZ" secondAttribute="bottom" constant="14" id="QPR-Z8-joa"/>
+                            <constraint firstItem="LJG-Tx-F9e" firstAttribute="top" secondItem="fjj-Dn-JHD" secondAttribute="bottom" constant="44" id="Vi7-fR-faN"/>
+                            <constraint firstItem="sgx-Rx-3bp" firstAttribute="top" secondItem="0hf-iH-0VU" secondAttribute="bottom" constant="15" id="aL6-ws-UZf"/>
+                            <constraint firstItem="0hf-iH-0VU" firstAttribute="leading" secondItem="2hS-gv-WUe" secondAttribute="leading" constant="32" id="aT6-Wl-Mhc"/>
+                            <constraint firstItem="nRM-7p-W0P" firstAttribute="leading" secondItem="2hS-gv-WUe" secondAttribute="leading" constant="85" id="cRA-zb-PYw"/>
+                            <constraint firstItem="2hS-gv-WUe" firstAttribute="trailing" secondItem="Kvk-rw-hKo" secondAttribute="trailing" constant="67" id="eAt-kh-dT6"/>
+                            <constraint firstItem="Jw3-11-hhd" firstAttribute="leading" secondItem="2hS-gv-WUe" secondAttribute="leading" constant="54" id="eIS-eo-JlR"/>
+                            <constraint firstItem="nRM-7p-W0P" firstAttribute="top" secondItem="8zd-Ju-75d" secondAttribute="bottom" constant="16" id="fZL-gE-5jw"/>
+                            <constraint firstItem="Kvk-rw-hKo" firstAttribute="top" secondItem="LJG-Tx-F9e" secondAttribute="bottom" constant="21" id="ii0-XE-eef"/>
+                            <constraint firstItem="0hf-iH-0VU" firstAttribute="top" secondItem="2hS-gv-WUe" secondAttribute="top" constant="10" id="ruz-Wq-GmE"/>
+                            <constraint firstItem="2hS-gv-WUe" firstAttribute="bottom" secondItem="yMn-KE-Tz1" secondAttribute="bottom" constant="108" id="tcY-X2-KxM"/>
+                            <constraint firstItem="yMn-KE-Tz1" firstAttribute="centerX" secondItem="2hS-gv-WUe" secondAttribute="centerX" id="vlv-mK-LKG"/>
+                            <constraint firstItem="tkj-mn-NdZ" firstAttribute="top" secondItem="sgx-Rx-3bp" secondAttribute="bottom" constant="40" id="yS2-EL-lde"/>
+                            <constraint firstItem="8zd-Ju-75d" firstAttribute="leading" secondItem="Jw3-11-hhd" secondAttribute="trailing" constant="25" id="yXD-9w-C3C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2hS-gv-WUe"/>
+                    </view>
+                    <connections>
+                        <outlet property="smartBtn" destination="yMn-KE-Tz1" id="KXa-rJ-e88"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bmw-lO-I6o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282.39999999999998" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_smart_alarm" width="81" height="28"/>
+        <image name="icon_smart_gps" width="99" height="33"/>
+        <image name="icon_smart_monitor" width="121" height="42"/>
+        <image name="icon_smart_mydriver" width="81" height="28"/>
+        <image name="icon_smart_rank" width="81" height="28"/>
+        <image name="icon_smart_remind" width="65" height="22"/>
+        <image name="icon_smart_waybill" width="113" height="40"/>
+        <image name="icon_voice" width="132" height="132"/>
+    </resources>
+</document>
