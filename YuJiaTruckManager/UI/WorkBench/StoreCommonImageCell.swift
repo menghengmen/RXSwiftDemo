@@ -20,12 +20,9 @@ class StoreCommonImageCellVM: BaseCellVM{
 
     override init() {
         super.init()
-       
-        didClickRightBtn.asObservable()
-           .bind(to: MessageCenter.shared.needShowImagePick)
-           .disposed(by: disposeBag)
-        
-        didClickLeftBtn.asObservable()
+
+        Observable.of(didClickLeftBtn,didClickRightBtn)
+           .merge()
            .bind(to: MessageCenter.shared.needShowImagePick)
            .disposed(by: disposeBag)
         
