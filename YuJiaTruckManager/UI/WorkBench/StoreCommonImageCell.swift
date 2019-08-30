@@ -26,6 +26,8 @@ class StoreCommonImageCellVM: BaseCellVM{
            .bind(to: MessageCenter.shared.needShowImagePick)
            .disposed(by: disposeBag)
         
+        
+        
         MessageCenter.shared.didFinishPickImage.asObservable()
             .map { [weak self] (value) ->[UIImage]  in
                 var tem = self?.images.value
