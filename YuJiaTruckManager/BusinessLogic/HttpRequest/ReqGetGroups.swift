@@ -36,13 +36,13 @@ class ReqGetGroups: BaseReqModel<ReqGetGroups.Model> {
                          "description": "success",
                          "dataList":
                             [   ["gpsGropName": "危险车组",
-                                 "gpsGropId":"110",
+                                 "gpsGroupId":"110",
                                  "vehicleDtoList" : [["vehicleId":1,
                                                      "carLicense":"苏A01QQ5"],[ "vehicleId":2,
                                                                                    "carLicense":"苏N01QQ5"]]
                                 ],
                                 ["gpsGropName": "特殊车组",
-                                 "gpsGropId":"120",
+                                 "gpsGroupId":"120",
 
                                  "vehicleDtoList" : [["vehicleId":3,
                                                       "carLicense":"苏M01QQ5"],[ "vehicleId":4, "carLicense":"苏A034Q5", "status": 0],[ "vehicleId":5, "carLicense":"苏x01QQ5", "status": 1],[ "vehicleId":6,
@@ -54,7 +54,7 @@ class ReqGetGroups: BaseReqModel<ReqGetGroups.Model> {
                                                                                                                                                                                                      "carLicense":"苏A03456", "status": 1]]
                                 ],
                                 ["gpsGropName": "易爆车组",
-                                 "gpsGropId":"119",
+                                 "gpsGroupId":"119",
 
                                  "vehicleDtoList" : [["vehicleId":12,
                                                      "carLicense":"苏A0VNQ5"],["vehicleId":13,
