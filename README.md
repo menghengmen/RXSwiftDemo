@@ -100,4 +100,48 @@ class LoginVM: BaseVM {
 
 
 ```objc
+/// 管理员登录页VC
+class AdminLoginVC: BaseVC {
+    
+    // IBOutlet
+    @IBOutlet private weak var titleLbl: UILabel!
+    @IBOutlet private weak var subtitleLbl: UILabel!
+    @IBOutlet private weak var usernameTxf: UITextField!
+    @IBOutlet private weak var passwordTxf: UITextField!
+    @IBOutlet private weak var loginBtn: UIButton!
+    
+    override func viewSetup() {
+        super.viewSetup()
+        navBarStyle = .translucent
+        
+    }
+    
+    /// 以下是相关的绑定操作
+    override func viewBindViewModel() {
+        super.viewBindViewModel()
+        if let vm = viewModel as? AdminLoginVM{
+            usernameTxf.rx.text.orEmpty
+                .asObservable()
+                .bind(to: vm.accountInput)
+                .disposed(by: disposeBag)
+            
+            passwordTxf.rx.text.orEmpty
+                .asObservable()
+                .bind(to: vm.passwordInput)
+                .disposed(by: disposeBag)
+            
+            vm.isEnabelClickNext.asDriver()
+                .drive(loginBtn.rx.isEnabled)
+                .disposed(by: disposeBag)
+            
+            loginBtn.rx.tap.asObservable()
+                .bind(to: vm.clickNextBtn)
+                .disposed(by: disposeBag)
+            
+            
+        }
+        
+    }
+    
+}
 ```
