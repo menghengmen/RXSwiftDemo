@@ -1,7 +1,7 @@
 #  RXSwift结合MVVM组件化小项目
 ##  详解 （以登录界面为例）
 ```objc
-/// 登录页
+/// 登录页VM  把VC里面的一些控件以及点击事件等于VM绑定
 class LoginVM: BaseVM {
     
     // to view
