@@ -278,6 +278,8 @@
 		B02D230D22FA7123002B8AA1 /* StoreInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02D230B22FA7123002B8AA1 /* StoreInputCell.xib */; };
 		B02D236322FA7CD7002B8AA1 /* StoreCommonImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02D236122FA7CD7002B8AA1 /* StoreCommonImageCell.swift */; };
 		B02D236422FA7CD7002B8AA1 /* StoreCommonImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */; };
+		B05DB04F23CF463B0046BCDB /* SelectStoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05DB04E23CF463B0046BCDB /* SelectStoreVM.swift */; };
+		B05DB05123CF46670046BCDB /* SelectStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05DB05023CF46670046BCDB /* SelectStoreVC.swift */; };
 		B0B4BC3622D234B3008C9AC7 /* WorkBenchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */; };
 		B0B4BC3822D234D9008C9AC7 /* WorkBenchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */; };
 		B0B4BC3B22D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */; };
@@ -623,6 +625,8 @@
 		B02D230B22FA7123002B8AA1 /* StoreInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreInputCell.xib; sourceTree = "<group>"; };
 		B02D236122FA7CD7002B8AA1 /* StoreCommonImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCommonImageCell.swift; sourceTree = "<group>"; };
 		B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCommonImageCell.xib; sourceTree = "<group>"; };
+		B05DB04E23CF463B0046BCDB /* SelectStoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStoreVM.swift; sourceTree = "<group>"; };
+		B05DB05023CF46670046BCDB /* SelectStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStoreVC.swift; sourceTree = "<group>"; };
 		B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchVM.swift; sourceTree = "<group>"; };
 		B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchVC.swift; sourceTree = "<group>"; };
 		B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchStoreStateCell.swift; sourceTree = "<group>"; };
@@ -829,6 +833,7 @@
 			isa = PBXGroup;
 			children = (
 				3B1D3EB32179B92D00347704 /* Root */,
+				B05DB04D23CF45F50046BCDB /* SelectStore */,
 				B0B4BC3422D23466008C9AC7 /* WorkBench */,
 				3B1D3EFF2179D77D00347704 /* Home */,
 				3B175808217EBFE400F0C7E9 /* History */,
@@ -1431,6 +1436,15 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		B05DB04D23CF45F50046BCDB /* SelectStore */ = {
+			isa = PBXGroup;
+			children = (
+				B05DB04E23CF463B0046BCDB /* SelectStoreVM.swift */,
+				B05DB05023CF46670046BCDB /* SelectStoreVC.swift */,
+			);
+			path = SelectStore;
+			sourceTree = "<group>";
+		};
 		B0B4BC3422D23466008C9AC7 /* WorkBench */ = {
 			isa = PBXGroup;
 			children = (
@@ -1779,6 +1793,7 @@
 				1BFFA71721DE2C34005DAE8F /* VehicleGpsAddVehicleVC.swift in Sources */,
 				1BD62ABC21AB92F7003B0C40 /* ReqAddDriver.swift in Sources */,
 				3B5279C0218189D5002C3CFF /* AlarmDetailDriverCell.swift in Sources */,
+				B05DB04F23CF463B0046BCDB /* SelectStoreVM.swift in Sources */,
 				1B9CACCF21D61D080060B2A7 /* VehicleGpsFilterVM.swift in Sources */,
 				1B7E5CD6218BDBC00012AD59 /* ReqGetAlarmCount.swift in Sources */,
 				3BE0C72B2189D0C400214233 /* ZFGradientAttribute.m in Sources */,
@@ -1874,6 +1889,7 @@
 				3B1D3EEC2179CFFC00347704 /* ConstantUserDefault.swift in Sources */,
 				3BEA29A621D31DE700D45356 /* RankListSection.swift in Sources */,
 				3BF5A3F321E4CBFB00373F02 /* SettingsVM.swift in Sources */,
+				B05DB05123CF46670046BCDB /* SelectStoreVC.swift in Sources */,
 				1B9CACCB21D5ADE90060B2A7 /* ReqPlayback.swift in Sources */,
 				3BE0C71F2189D0C400214233 /* ZFTranslucencePath.m in Sources */,
 				3BE0C7222189D0C400214233 /* ZFLine.m in Sources */,
