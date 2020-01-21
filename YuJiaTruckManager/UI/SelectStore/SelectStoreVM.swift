@@ -13,4 +13,15 @@ import YuDaoComponents
 
 class SelectStoreVM: BaseTableVM {
 
+    override init() {
+        super.init()
+        
+        let baseSection = BaseSectionVM()
+         
+         let cellVM = SelectStoreCellVM()
+         baseSection.cellViewModels.append(cellVM)
+        
+        dataSource.value = [baseSection]
+    }
+    
 }

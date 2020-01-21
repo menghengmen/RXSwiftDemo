@@ -72,7 +72,14 @@ class MainTabVC: UITabBarController {
         workBenchVC.viewModel = vm
         let workBenchNav = BaseNAV(rootViewController: workBenchVC)
         vcAry.append(workBenchNav)
-     
+
+        
+        /// 挑货
+        let selectStoreVC = storyboard.instantiateViewController(withIdentifier: "SelectStoreVC") as! SelectStoreVC
+        let selectStoreVm = SelectStoreVM()
+        selectStoreVC.viewModel = selectStoreVm
+        let selectStoreNav = BaseNAV(rootViewController: selectStoreVC)
+        vcAry.append(selectStoreNav)
         
         
         viewControllers = vcAry

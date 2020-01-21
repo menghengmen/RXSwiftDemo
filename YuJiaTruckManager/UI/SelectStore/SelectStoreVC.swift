@@ -16,9 +16,19 @@ class SelectStoreVC: BaseTableVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
+    override func cellClass(from cellViewModel: TableViewCellViewModelProtocol?) -> TableCellCompatible.Type? {
+        switch cellViewModel {
+         case is SelectStoreCellVM:
+             return SelectStoreCell .self
+           
+         default:
+            return nil
+            
+        
+        }
+    }
 
 
 }

@@ -280,6 +280,8 @@
 		B02D236422FA7CD7002B8AA1 /* StoreCommonImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */; };
 		B05DB04F23CF463B0046BCDB /* SelectStoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05DB04E23CF463B0046BCDB /* SelectStoreVM.swift */; };
 		B05DB05123CF46670046BCDB /* SelectStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05DB05023CF46670046BCDB /* SelectStoreVC.swift */; };
+		B05DB05623CF48920046BCDB /* SelectStoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05DB05423CF48920046BCDB /* SelectStoreCell.swift */; };
+		B05DB05723CF48920046BCDB /* SelectStoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05DB05523CF48920046BCDB /* SelectStoreCell.xib */; };
 		B0B4BC3622D234B3008C9AC7 /* WorkBenchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */; };
 		B0B4BC3822D234D9008C9AC7 /* WorkBenchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */; };
 		B0B4BC3B22D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */; };
@@ -627,6 +629,8 @@
 		B02D236222FA7CD7002B8AA1 /* StoreCommonImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCommonImageCell.xib; sourceTree = "<group>"; };
 		B05DB04E23CF463B0046BCDB /* SelectStoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStoreVM.swift; sourceTree = "<group>"; };
 		B05DB05023CF46670046BCDB /* SelectStoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStoreVC.swift; sourceTree = "<group>"; };
+		B05DB05423CF48920046BCDB /* SelectStoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectStoreCell.swift; sourceTree = "<group>"; };
+		B05DB05523CF48920046BCDB /* SelectStoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectStoreCell.xib; sourceTree = "<group>"; };
 		B0B4BC3522D234B3008C9AC7 /* WorkBenchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchVM.swift; sourceTree = "<group>"; };
 		B0B4BC3722D234D9008C9AC7 /* WorkBenchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchVC.swift; sourceTree = "<group>"; };
 		B0B4BC3922D23BFB008C9AC7 /* WorkBenchStoreStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkBenchStoreStateCell.swift; sourceTree = "<group>"; };
@@ -1441,6 +1445,8 @@
 			children = (
 				B05DB04E23CF463B0046BCDB /* SelectStoreVM.swift */,
 				B05DB05023CF46670046BCDB /* SelectStoreVC.swift */,
+				B05DB05423CF48920046BCDB /* SelectStoreCell.swift */,
+				B05DB05523CF48920046BCDB /* SelectStoreCell.xib */,
 			);
 			path = SelectStore;
 			sourceTree = "<group>";
@@ -1590,6 +1596,7 @@
 				1BFFA71521DDDE0F005DAE8F /* VehicleGpsGroupNameCell.xib in Resources */,
 				3B1D3E9A2179ABFB00347704 /* LaunchScreen.storyboard in Resources */,
 				1B40AE6A21D6553B00E3A3A1 /* VehicleGpsHeadCell.xib in Resources */,
+				B05DB05723CF48920046BCDB /* SelectStoreCell.xib in Resources */,
 				3B1D3ECD2179C72C00347704 /* mapapi.bundle in Resources */,
 				3B5279B921816AD1002C3CFF /* AlarmFilterInputCell.xib in Resources */,
 				3BEA29A821D34DBF00D45356 /* RankListCell.xib in Resources */,
@@ -1750,6 +1757,7 @@
 				3B175800217D68FE00F0C7E9 /* HomeVM.swift in Sources */,
 				3BE0C7242189D0C400214233 /* ZFYAxisLine.m in Sources */,
 				1B13C8592187E8B800FF5D8D /* ReqAlarmDetail.swift in Sources */,
+				B05DB05623CF48920046BCDB /* SelectStoreCell.swift in Sources */,
 				3B5279A121815C00002C3CFF /* AboutVC.swift in Sources */,
 				3B527995218154F3002C3CFF /* AlarmDetailVC.swift in Sources */,
 				3B4FDC3921ABE86A00DB82FA /* ReminderDetailContentCell.swift in Sources */,
