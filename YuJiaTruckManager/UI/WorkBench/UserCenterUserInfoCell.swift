@@ -3,7 +3,7 @@
 //  YuJia
 //
 //  Created by mh on 2018/7/26.
-//  Copyright © 2018年 Jiangsu Yu Dao Data Technology. All rights reserved.
+//  Copyright © 2018年 mh Technology. All rights reserved.
 //
 
 import UIKit

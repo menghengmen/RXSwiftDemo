@@ -3,7 +3,7 @@
 //  YuJiaTruckManagerTests
 //
 //  Created by mh on 2018/10/19.
-//  Copyright © 2018 Jiangsu Yu Dao Data Technology. All rights reserved.
+//  Copyright © 2018 mh Technology. All rights reserved.
 //
 
 import XCTest

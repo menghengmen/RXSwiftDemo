@@ -252,28 +252,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JQ5-hm-TYW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="pHe-9Z-Wzh"/>
+                                </constraints>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Nz6-1f-Qxv" id="rF1-2F-gB7"/>
                                     <outlet property="delegate" destination="Nz6-1f-Qxv" id="k16-sG-EkU"/>
                                 </connections>
                             </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K7n-bK-HjJ">
+                                <rect key="frame" x="100" y="0.0" width="275" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nz6-1f-Qxv" id="QR2-sN-zbe"/>
+                                    <outlet property="delegate" destination="Nz6-1f-Qxv" id="asm-Zw-Gc7"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="K7n-bK-HjJ" firstAttribute="top" secondItem="Dh9-vQ-kf7" secondAttribute="top" id="4PC-tV-ozM"/>
                             <constraint firstItem="Dh9-vQ-kf7" firstAttribute="bottom" secondItem="JQ5-hm-TYW" secondAttribute="bottom" id="A8W-Dt-w4e"/>
+                            <constraint firstItem="K7n-bK-HjJ" firstAttribute="leading" secondItem="JQ5-hm-TYW" secondAttribute="trailing" id="GVf-3h-SBd"/>
+                            <constraint firstItem="Dh9-vQ-kf7" firstAttribute="bottom" secondItem="K7n-bK-HjJ" secondAttribute="bottom" id="XbC-Kr-hUh"/>
                             <constraint firstItem="JQ5-hm-TYW" firstAttribute="top" secondItem="Dh9-vQ-kf7" secondAttribute="top" id="djN-4T-qOz"/>
                             <constraint firstItem="JQ5-hm-TYW" firstAttribute="leading" secondItem="Dh9-vQ-kf7" secondAttribute="leading" id="fwj-86-Y4n"/>
-                            <constraint firstItem="Dh9-vQ-kf7" firstAttribute="trailing" secondItem="JQ5-hm-TYW" secondAttribute="trailing" id="kKV-mY-jk7"/>
+                            <constraint firstItem="Dh9-vQ-kf7" firstAttribute="trailing" secondItem="K7n-bK-HjJ" secondAttribute="trailing" id="zWX-Vq-myI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dh9-vQ-kf7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="挑货" image="tab_workbench" selectedImage="tab_history_normal" id="OjS-d3-JdA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="JQ5-hm-TYW" id="aIJ-zG-l0g"/>
+                        <outlet property="leftTableView" destination="JQ5-hm-TYW" id="XeJ-dd-1Md"/>
+                        <outlet property="rightTableview" destination="K7n-bK-HjJ" id="AQu-ow-Nzi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qh-XF-WsN" userLabel="First Responder" sceneMemberID="firstResponder"/>

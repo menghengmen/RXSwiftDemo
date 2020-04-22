@@ -3,7 +3,7 @@
 //  YuJiaTruckManager
 //
 //  Created by 哈哈 on 2020/1/15.
-//  Copyright © 2020 Jiangsu Yu Dao Data Technology. All rights reserved.
+//  Copyright © 2020 mh Technology. All rights reserved.
 //
 
 import UIKit

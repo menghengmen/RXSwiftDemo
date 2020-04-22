@@ -3,7 +3,7 @@
 //  YuJiaTruckManager
 //
 //  Created by mh on 2018/10/19.
-//  Copyright © 2018年 Jiangsu Yu Dao Data Technology. All rights reserved.
+//  Copyright © 2018年 mh Technology. All rights reserved.
 //
 
 // 百度地图

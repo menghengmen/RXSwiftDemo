@@ -2107,7 +2107,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P623LX8B28;
+				DEVELOPMENT_TEAM = KU57X2B64P;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2164,7 +2164,7 @@
 					"-framework",
 					"\"YuDaoComponents\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.YuDaoData.YuJiaTruckManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YuDaoData.YuJiaTruckManager1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "YuJiaTruckManager/Utils/SwiftHybrid/YuJiaTruckManager-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

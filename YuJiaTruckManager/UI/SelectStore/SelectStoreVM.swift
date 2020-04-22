@@ -3,7 +3,7 @@
 //  YuJiaTruckManager
 //
 //  Created by mh on 2020/1/15.
-//  Copyright © 2020 Jiangsu Yu Dao Data Technology. All rights reserved.
+//  Copyright © 2020 mh Technology. All rights reserved.
 //
 
 import UIKit
@@ -21,7 +21,7 @@ class SelectStoreVM: BaseTableVM {
          let cellVM = SelectStoreCellVM()
          baseSection.cellViewModels.append(cellVM)
         
-        dataSource.value = [baseSection]
+         dataSource.value = [baseSection]
     }
     
 }
